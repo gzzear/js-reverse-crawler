@@ -1,0 +1,3 @@
+([('music_qt',
+   '/Users/gaozhe/PycharmProjects/PythonProject/crawler/music_qt/dist/music_qt',
+   'EXECUTABLE')],)
