@@ -63,8 +63,11 @@ class RRCSpider():
     # 获取字体文件映射关系
     def get_cmap(self):
         font = TTFont("1.ttf")
+        # 获取cmap映射表
         cmap = font['cmap'].tables[0].ttFont.getGlyphOrder()[1:]
+        # 前端混淆对应的字符解码
         s_cmap = [chr(int(code[3:], 16)) for code in cmap]
+        # 由于是数字的混淆 所以按照数字自定义映射(每个案例得看不同的情况)
         self.cmap = {s_cmap[i]: i for i in range(0, len(s_cmap))}
 
     # 获取车辆信息
