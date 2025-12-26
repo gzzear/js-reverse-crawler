@@ -19,7 +19,7 @@ service = Service(drive_path)
 driver = webdriver.Chrome(service=service,options=chrome_options)
 
 # 3. 执行 `stealth.min.js` 文件进行隐藏浏览器指纹
-with open('../stealth.min.js') as f:
+with open('../../stealth.min.js') as f:
     js = f.read()
 driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
     "source": js
