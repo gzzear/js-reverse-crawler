@@ -1,4 +1,0 @@
-selenium>=4.0.0
-requests>=2.25.0
-pyautogui>=0.9.54
-Pillow>=8.0.0  # pyautogui的依赖 
