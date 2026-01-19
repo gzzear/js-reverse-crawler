@@ -1,4 +1,4 @@
-const {watch} = require('../../../../工具/补环境/hook原型链/env_hook');
+// const {watch} = require('../../../../工具/补环境/hook原型链/env_hook');
 
 if (typeof __dirname != 'undefined'){ __dirname = undefined }
 if (typeof __filename != 'undefined'){ __filename = undefined }
@@ -299,11 +299,11 @@ window.localStorage = localStorage
 /***********************
  * 最后再 hook（顺序很重要）
  ***********************/
-window = watch(window, "window");
-document = watch(document, "document");
-navigator = watch(navigator, "navigator");
-location = watch(location, "location");
-screen = watch(screen, "screen");
-history = watch(history, "history");
-localStorage = watch(localStorage, "localStorage")
-documentElement = watch(documentElement, "documentElement")
+// window = watch(window, "window");
+// document = watch(document, "document");
+// navigator = watch(navigator, "navigator");
+// location = watch(location, "location");
+// screen = watch(screen, "screen");
+// history = watch(history, "history");
+// localStorage = watch(localStorage, "localStorage")
+// documentElement = watch(documentElement, "documentElement")
