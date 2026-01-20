@@ -1,0 +1,10 @@
+==================================================
+🚀 PDD Anti-Content Service Started
+📡 Server running on: http://localhost:3000
+🏥 Health check: http://localhost:3000/health
+🌐 API 接口: http://localhost:3000/api/anti_content
+==================================================
+[2026-01-19T09:26:50.557Z] Generated anti_content successfully
+[2026-01-19T09:26:52.193Z] Generated anti_content successfully
+[2026-01-19T09:26:52.379Z] Generated anti_content successfully
+[2026-01-19T09:26:52.454Z] Generated anti_content successfully
