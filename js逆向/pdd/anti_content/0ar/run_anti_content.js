@@ -1,4 +1,4 @@
-require('../0as/anti_content_env')
+require('../0ar/anti_content_env')
 require('./anti-content')
 
 const anti_content = new (window.loader("eDaA"))({
