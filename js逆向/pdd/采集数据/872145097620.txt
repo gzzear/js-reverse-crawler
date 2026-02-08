@@ -1,0 +1,1713 @@
+{
+  "store": {
+    "errorRedirectUrl": "/",
+    "isPre": false,
+    "$likeMallText": "关注",
+    "$likeMallEntryTip": "关注的店铺可在个人中心的“店铺关注”入口查看",
+    "preRenderBannerSrc": null,
+    "preRenderHideNoFirstScreenContent": false,
+    "preRenderShowMock": false,
+    "initDataObj": {
+      "goods": {
+        "serverTime": 1766126728,
+        "serverTimeTen": 17661267280,
+        "weakenGoodsName": 0,
+        "catID": 24941,
+        "goodsID": 872145097620,
+        "brandId": 0,
+        "goodsName": "养殖兽用奶瓶小猪奶瓶小羊人工喂养动物奶瓶专用兽用250毫升",
+        "shareDesc": "养殖兽用奶瓶小猪奶瓶小羊人工喂养动物奶瓶专用兽用250毫升",
+        "goodsType": 1,
+        "localGroups": [],
+        "hasLocalGroup": 1,
+        "topGallery": [
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/262a9ed0-4917-48e6-96ea-c01808e38f3c.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909033,
+            "aspectRatio": 1
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/7347d0ba-f464-434f-925f-3287d786fe19.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909034,
+            "aspectRatio": 1
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/a217fe9f-977d-4cc1-ba0f-98f2d18bd090.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909035,
+            "aspectRatio": 1
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/8bd87a8b-1b5e-43bf-b62b-5af46a90b0ca.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909036,
+            "aspectRatio": 1
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/23342384-5499-4bda-9b0e-643e8c14e4f6.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909037,
+            "aspectRatio": 1
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/07d8a142-5db9-48e3-a6f8-15e77740332b.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909038,
+            "aspectRatio": 1
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/5f7bfae3-638d-4e61-a589-3c7d403de23b.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909039,
+            "aspectRatio": 1
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/bd5d7b55-cfad-44b3-b3e8-a965b0ce1696.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909040,
+            "aspectRatio": 1
+          },
+          {
+            "url": "https://img.pddpic.com/goods/images/2021-03-05/d98dd384-cf48-463c-b115-b278b326e19a.jpeg?imageView2/2/w/1300/q/80",
+            "id": 1469943909041,
+            "aspectRatio": 1
+          }
+        ],
+        "viewImageData": [
+          "https://img.pddpic.com/mms-material-img/2021-03-05/262a9ed0-4917-48e6-96ea-c01808e38f3c.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "https://img.pddpic.com/mms-material-img/2021-03-05/7347d0ba-f464-434f-925f-3287d786fe19.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "https://img.pddpic.com/mms-material-img/2021-03-05/a217fe9f-977d-4cc1-ba0f-98f2d18bd090.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "https://img.pddpic.com/mms-material-img/2021-03-05/8bd87a8b-1b5e-43bf-b62b-5af46a90b0ca.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "https://img.pddpic.com/mms-material-img/2021-03-05/23342384-5499-4bda-9b0e-643e8c14e4f6.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "https://img.pddpic.com/mms-material-img/2021-03-05/07d8a142-5db9-48e3-a6f8-15e77740332b.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "https://img.pddpic.com/mms-material-img/2021-03-05/5f7bfae3-638d-4e61-a589-3c7d403de23b.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "https://img.pddpic.com/mms-material-img/2021-03-05/bd5d7b55-cfad-44b3-b3e8-a965b0ce1696.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "https://img.pddpic.com/goods/images/2021-03-05/d98dd384-cf48-463c-b115-b278b326e19a.jpeg?imageView2/2/w/1300/q/80"
+        ],
+        "detailGallery": [
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2025-10-30/79d2832e-7536-4767-b687-18664d852f6e.png?imageView2/2/w/1300/q/80",
+            "width": 750,
+            "height": 124
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2025-10-19/8d3ce641-a1cb-467b-88b8-ec4e4174b894.png?imageView2/2/w/1300/q/80",
+            "width": 750,
+            "height": 124
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/262a9ed0-4917-48e6-96ea-c01808e38f3c.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/e324f327-9075-4236-8382-4deca6387fc9.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/6ee8ea44-9c4f-4737-95e1-0589514a00e1.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/262a9ed0-4917-48e6-96ea-c01808e38f3c.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/23342384-5499-4bda-9b0e-643e8c14e4f6.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/bd5d7b55-cfad-44b3-b3e8-a965b0ce1696.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/07d8a142-5db9-48e3-a6f8-15e77740332b.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/5f7bfae3-638d-4e61-a589-3c7d403de23b.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/bf0aedc1-f67b-4a19-adc1-7bfc7ced8c88.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 750,
+            "height": 750
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/58236814-1644-4b9f-bd5d-f8bc12eec9b0.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 1080,
+            "height": 1079
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/9e2ed1d8-e0e4-444e-b97d-90ae90ac2513.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/74501a7d-30c2-4576-bf50-41870c9b8ad0.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 1080,
+            "height": 1080
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/a7dff1dd-fddd-4cb8-a958-99edd9e6591c.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 1080,
+            "height": 1080
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/b6cae2d4-81bb-48df-b051-4da3f907c3cd.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 1080,
+            "height": 1080
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2021-03-05/80e76d2b-6089-43da-a9dd-ebb0f288e682.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+            "width": 1074,
+            "height": 1434
+          }
+        ],
+        "videoGallery": [],
+        "descVideoGallery": [],
+        "mallID": 555171374,
+        "groupTypes": [],
+        "skus": [
+          {
+            "skuId": 1829805745587,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-07-27/27c76190-c16d-4643-bc56-644fb455860e.jpeg",
+            "initQuantity": 0,
+            "quantity": 331,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400029408",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250ml奶瓶1个+2个备用奶嘴",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400029408,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "22.79",
+            "groupPrice": "21.57",
+            "oldGroupPrice": 21.79,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 0,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "122",
+            "skuPrice": 2179,
+            "skuID": 1829805745587,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥2157",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745588,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-07-27/27c76190-c16d-4643-bc56-644fb455860e.jpeg",
+            "initQuantity": 0,
+            "quantity": 370,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6445354079",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250毫升奶瓶【1个装+1个奶嘴】",
+                "spec_key_id": 4773,
+                "spec_value_id": 6445354079,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "16.16",
+            "groupPrice": "15",
+            "oldGroupPrice": 15.16,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 1,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "116",
+            "skuPrice": 1516,
+            "skuID": 1829805745588,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥1500",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745589,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-05-18/59ccf585-31d9-4f70-98b9-b300a770f09a.jpeg",
+            "initQuantity": 0,
+            "quantity": 444,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6841117126",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "1个奶瓶+5个奶嘴（经济实惠）",
+                "spec_key_id": 4773,
+                "spec_value_id": 6841117126,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "30.92",
+            "groupPrice": "29.62",
+            "oldGroupPrice": 29.92,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 2,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "130",
+            "skuPrice": 2992,
+            "skuID": 1829805745589,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥2962",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745590,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-05-18/b09a60a9-a6b3-41c5-bd69-257ccb53a97d.jpeg",
+            "initQuantity": 0,
+            "quantity": 756,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6841116359",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "1个奶瓶+10个奶嘴（经济实惠）",
+                "spec_key_id": 4773,
+                "spec_value_id": 6841116359,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "39.5",
+            "groupPrice": "38.11",
+            "oldGroupPrice": 38.5,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 3,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "139",
+            "skuPrice": 3850,
+            "skuID": 1829805745590,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥3811",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745591,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-05-18/72a74aa7-dc6b-449c-bd31-45087cc8e025.jpeg",
+            "initQuantity": 0,
+            "quantity": 242,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6841057416",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "2个奶瓶+2个奶嘴（卖家力荐）",
+                "spec_key_id": 4773,
+                "spec_value_id": 6841057416,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "28.82",
+            "groupPrice": "27.54",
+            "oldGroupPrice": 27.82,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 4,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "128",
+            "skuPrice": 2782,
+            "skuID": 1829805745591,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥2754",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745592,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-07-27/1417a441-c873-4571-97e8-2f4387e5050d.jpeg",
+            "initQuantity": 0,
+            "quantity": 676,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6198358869",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250毫升奶瓶【3个装+3个奶嘴】",
+                "spec_key_id": 4773,
+                "spec_value_id": 6198358869,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "37.58",
+            "groupPrice": "36.21",
+            "oldGroupPrice": 36.58,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 5,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "137",
+            "skuPrice": 3658,
+            "skuID": 1829805745592,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥3621",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745593,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-05-18/2ce3747e-d1c0-4e6a-94f5-ca0c6d9e50b2.jpeg",
+            "initQuantity": 0,
+            "quantity": 395,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6841074234",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "4个奶瓶+4个奶嘴（经济实惠装）",
+                "spec_key_id": 4773,
+                "spec_value_id": 6841074234,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "48.53",
+            "groupPrice": "47.05",
+            "oldGroupPrice": 47.53,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 6,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "148",
+            "skuPrice": 4753,
+            "skuID": 1829805745593,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥4705",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745594,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-07-27/1417a441-c873-4571-97e8-2f4387e5050d.jpeg",
+            "initQuantity": 0,
+            "quantity": 871,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6198391048",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250毫升奶瓶【5个装+5个奶嘴】",
+                "spec_key_id": 4773,
+                "spec_value_id": 6198391048,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "39.65",
+            "groupPrice": "38.26",
+            "oldGroupPrice": 38.65,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 7,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "139",
+            "skuPrice": 3865,
+            "skuID": 1829805745594,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥3826",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745595,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-05-18/d18f6f8c-df63-408a-83ae-bfd60ff1fa57.jpeg",
+            "initQuantity": 0,
+            "quantity": 461,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6841057775",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "8个奶瓶+8个奶嘴（超实惠装）",
+                "spec_key_id": 4773,
+                "spec_value_id": 6841057775,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "49.58",
+            "groupPrice": "48.09",
+            "oldGroupPrice": 48.58,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 8,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "149",
+            "skuPrice": 4858,
+            "skuID": 1829805745595,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥4809",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745596,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2021-07-27/1417a441-c873-4571-97e8-2f4387e5050d.jpeg",
+            "initQuantity": 0,
+            "quantity": 340,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "6198378799",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250毫升奶瓶【10个装+10个奶嘴",
+                "spec_key_id": 4773,
+                "spec_value_id": 6198378799,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "55.94",
+            "groupPrice": "54.39",
+            "oldGroupPrice": 54.94,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 9,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "155",
+            "skuPrice": 5494,
+            "skuID": 1829805745596,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥5439",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745597,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2024-02-13/2010a473-14a4-43a5-9e8f-96211bff5eba.jpeg",
+            "initQuantity": 0,
+            "quantity": 466,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400014798",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250ml奶瓶2套+2个备用奶嘴",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400014798,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "34.58",
+            "groupPrice": "33.24",
+            "oldGroupPrice": 33.58,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 10,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "134",
+            "skuPrice": 3358,
+            "skuID": 1829805745597,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥3324",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745598,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2024-02-13/fd673f6e-7cf3-47a3-a5f8-6136b189a1cd.jpeg",
+            "initQuantity": 0,
+            "quantity": 981,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400014806",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250ml奶瓶3套+3个备用奶嘴",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400014806,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "40.58",
+            "groupPrice": "39.18",
+            "oldGroupPrice": 39.58,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 11,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "140",
+            "skuPrice": 3958,
+            "skuID": 1829805745598,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥3918",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745599,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2024-02-13/8b5b3bca-3fc8-43a4-a8cd-c99c684a3868.jpeg",
+            "initQuantity": 0,
+            "quantity": 968,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400031203",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250ml奶瓶4套+4个备用奶嘴",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400031203,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "49.1",
+            "groupPrice": "47.61",
+            "oldGroupPrice": 48.1,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 12,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "149",
+            "skuPrice": 4810,
+            "skuID": 1829805745599,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥4761",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745600,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2024-02-13/7c87e3ed-4e32-4bfe-bd0b-9c6154b7d808.jpeg",
+            "initQuantity": 0,
+            "quantity": 543,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400029342",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "250ml奶瓶5套+5个备用奶嘴",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400029342,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "49.1",
+            "groupPrice": "47.61",
+            "oldGroupPrice": 48.1,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 13,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "149",
+            "skuPrice": 4810,
+            "skuID": 1829805745600,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥4761",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745601,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2024-02-13/b1127997-ba3a-4b8b-a7a6-267b0f6e4b8f.jpeg",
+            "initQuantity": 0,
+            "quantity": 195,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400031225",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "标准口径奶嘴5个",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400031225,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "25.73",
+            "groupPrice": "24.48",
+            "oldGroupPrice": 24.73,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 14,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "125",
+            "skuPrice": 2473,
+            "skuID": 1829805745601,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥2448",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745602,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2024-02-13/723bd299-96cf-4361-b85e-3ecf3aea13ef.jpeg",
+            "initQuantity": 0,
+            "quantity": 578,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400024455",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "标准口径奶嘴10个",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400024455,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "39.74",
+            "groupPrice": "38.35",
+            "oldGroupPrice": 38.74,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 15,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "139",
+            "skuPrice": 3874,
+            "skuID": 1829805745602,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥3835",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745603,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/open-gw/2025-11-30/921d570a-16b6-455b-9c18-5d3309b412d3.jpeg",
+            "initQuantity": 0,
+            "quantity": 536,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400031228",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "加长加厚奶嘴5个",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400031228,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "37.07",
+            "groupPrice": "35.7",
+            "oldGroupPrice": 36.07,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 16,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "137",
+            "skuPrice": 3607,
+            "skuID": 1829805745603,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥3570",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745604,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2024-02-13/7f085193-dd25-467e-acc8-7552428714c2.jpeg",
+            "initQuantity": 0,
+            "quantity": 796,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400021544",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "加长加厚奶嘴10个",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400021544,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "45.65",
+            "groupPrice": "44.2",
+            "oldGroupPrice": 44.65,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 17,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "145",
+            "skuPrice": 4465,
+            "skuID": 1829805745604,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥4420",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          },
+          {
+            "skuId": 1829805745605,
+            "goodsId": 872145097620,
+            "thumbUrl": "https://img.pddpic.com/mms-material-img/2024-02-13/9bb6bb58-8dc5-4640-860c-b268a021fec1.jpeg",
+            "initQuantity": 0,
+            "quantity": 488,
+            "limitQuantity": 999999,
+            "soldQuantity": 0,
+            "defaultQuantity": 100,
+            "isOnsale": 1,
+            "spec": "23400029378",
+            "specs": [
+              {
+                "spec_key": "属性",
+                "spec_value": "加长加厚奶嘴20个",
+                "spec_key_id": 4773,
+                "spec_value_id": 23400029378,
+                "custom": false
+              }
+            ],
+            "price": 0,
+            "normalPrice": "65.69",
+            "groupPrice": "64.04",
+            "oldGroupPrice": 64.69,
+            "marketPrice": 0,
+            "weight": 0,
+            "yellowLabelList": [],
+            "previewPriority": 18,
+            "startTime": 0,
+            "endTime": 0,
+            "staticLimitQuantity": 999999,
+            "attribute": "{\"skuPreSaleTime\":0}",
+            "normalSavePrice": "165",
+            "skuPrice": 6469,
+            "skuID": 1829805745605,
+            "skuExpansionPrice": "0",
+            "hotSale": 0,
+            "groupTip": "券前¥6404",
+            "groupTipType": 5,
+            "groupTipColor": "#58595B",
+            "groupTipFont": 14,
+            "sku_take_coupon": 1
+          }
+        ],
+        "thumbUrl": "https://img.pddpic.com/gaudit-image/2025-12-13/8a427b79548a9aa080fdece20397eb45.jpeg",
+        "hdThumbUrl": "https://img.pddpic.com/gaudit-image/2025-12-13/d2a55e026eb2d7c90d987e44dfec8fbe.jpeg",
+        "eventType": 0,
+        "isApp": false,
+        "isFreshmanApp": false,
+        "sideSalesTip": "已拼1件",
+        "catID1": 16192,
+        "catID2": 16194,
+        "catID3": 24940,
+        "catID4": 24941,
+        "spuID": 0,
+        "eventComing": false,
+        "isSpike": false,
+        "isTodaySpike": false,
+        "isTomorrowSpike": false,
+        "activity": {},
+        "isSpikeComing": false,
+        "overseaType": 0,
+        "gpv": null,
+        "quickRefund": false,
+        "rv": true,
+        "maxNormalPrice": "6569",
+        "minNormalPrice": "1616",
+        "maxGroupPrice": "6404",
+        "minGroupPrice": "1500",
+        "maxOnSaleGroupPrice": "6404",
+        "minOnSaleGroupPrice": "1500",
+        "maxOnSaleGroupPriceInCent": 6469,
+        "minOnSaleGroupPriceInCent": 1516,
+        "maxOnSaleNormalPrice": "6569",
+        "minOnSaleNormalPrice": "1616",
+        "unselectNormalSavePrice": "5069",
+        "oldMinOnSaleGroupPriceInCent": 1516,
+        "skipGoodsIDs": [
+          "0"
+        ],
+        "tag": 0,
+        "icon": null,
+        "tagIcon": [],
+        "isSecondHand": 0,
+        "appClientOnly": false,
+        "isColdGoods": 1,
+        "goodsProperty": [
+          {
+            "key": "品牌",
+            "values": [
+              "其他"
+            ],
+            "ref_pid": 310,
+            "reference_id": 20036
+          },
+          {
+            "key": "主材质",
+            "values": [
+              "其他"
+            ],
+            "ref_pid": 373,
+            "reference_id": 0
+          },
+          {
+            "key": "手柄材质",
+            "values": [
+              "其他"
+            ],
+            "ref_pid": 2002,
+            "reference_id": 0
+          },
+          {
+            "key": "功能特点",
+            "values": [
+              "其他",
+              "其他",
+              "其他"
+            ],
+            "ref_pid": 1011,
+            "reference_id": 0
+          },
+          {
+            "key": "产地",
+            "values": [
+              "中国大陆"
+            ],
+            "ref_pid": 482,
+            "reference_id": 0
+          },
+          {
+            "key": "发货地",
+            "values": [
+              "河北省"
+            ],
+            "ref_pid": 0,
+            "reference_id": 0
+          },
+          {
+            "key": "适用人群",
+            "values": [
+              "其他"
+            ],
+            "ref_pid": 338,
+            "reference_id": 0
+          },
+          {
+            "key": "最大承重",
+            "values": [
+              "其他"
+            ],
+            "ref_pid": 748,
+            "reference_id": 0
+          },
+          {
+            "key": "产品重量",
+            "values": [
+              "其他）"
+            ],
+            "ref_pid": 707,
+            "reference_id": 0
+          }
+        ],
+        "skuProperty": [],
+        "propertyShowNum": 9,
+        "linePrice": "6869",
+        "priceStyle": 2,
+        "priceSuffix": "起",
+        "quicklyExpire": {},
+        "userNoticeDynamic": {
+          "notice": "",
+          "degrade_notice": "",
+          "notice_type": 0,
+          "priority": 1,
+          "type": 0
+        },
+        "goodsExpansionPrice": "0",
+        "beforeRemindSeconds": 300,
+        "newShareTitle": {},
+        "bottomBanner": null,
+        "isAppFlow": false,
+        "isPersonalFav": 0,
+        "groupNumFull": false,
+        "showHistoryGroup": 1,
+        "shareLink": "goods.html?goods_id=872145097620&_oak_rcto=YWKjQO9erwtu7ttgg8q8YPzPzBG_2mau1q3Hbv_Z-ggNX3SVFZm7zfO0&page_from=2",
+        "promptExplain": "",
+        "isAbnormalStatus": false,
+        "statusExplain": "",
+        "checkQuantity": 1,
+        "destinationUrl": "",
+        "hideMall": false,
+        "isMallRec": false,
+        "status": 1,
+        "isGoodsOnSale": true,
+        "isSkuOnSale": true,
+        "isOnSale": true,
+        "quantity": 1000,
+        "propertyCardClick": 0,
+        "showRecTitle": 1,
+        "showRec": 1,
+        "options": [
+          117,
+          7,
+          122,
+          188,
+          60
+        ],
+        "eventTime": 1766126728,
+        "mallService": {
+          "service": [
+            {
+              "id": 2,
+              "type": "7天无理由退货",
+              "type_color": "#58595B",
+              "dialog_type": "7天无理由退货",
+              "dialog_type_color": "#151516",
+              "desc": "满足相应条件(使用后不支持)时，消费者可申请“7天无理由退换货”，其中定制订单不支持“7天无理由退货”",
+              "top": 0,
+              "top_type": 0,
+              "navigation": 0,
+              "navigation_url": "",
+              "detail_hidden": 0
+            },
+            {
+              "id": 13,
+              "type": "48小时内发货",
+              "type_color": "#58595B",
+              "dialog_type": "48小时内发货",
+              "dialog_type_color": "#151516",
+              "desc": "订单支付成功后48小时内发货，若未在48小时内发货，消费者将会收到至少3元无门槛代金券",
+              "top": 0,
+              "top_type": 0,
+              "navigation": 0,
+              "navigation_url": "",
+              "detail_hidden": 0
+            },
+            {
+              "id": 1,
+              "type": "全场包邮",
+              "type_color": "#58595B",
+              "dialog_type": "全场包邮",
+              "dialog_type_color": "#151516",
+              "desc": "所有商品包邮",
+              "top": 0,
+              "top_type": 0,
+              "navigation": 0,
+              "navigation_url": "",
+              "detail_hidden": 0
+            }
+          ],
+          "vipService": {},
+          "honorService": {}
+        },
+        "skuDirectOrder": false,
+        "vasTemplateId": {},
+        "skuNewPricePrefix": "券前",
+        "callWaistRecExtraParams": {
+          "shield_mall_goods_rec": 1
+        },
+        "h5ForwardFuncV2": 1,
+        "ui": {
+          "new_price_section": {
+            "is_normal": 1,
+            "type": "normal",
+            "price": "1500",
+            "price_rich": [
+              {
+                "txt": "1500",
+                "font": 28,
+                "type": 1,
+                "can_hidden": false,
+                "min_font": 19
+              },
+              {
+                "txt": "",
+                "font": 15,
+                "type": 1,
+                "can_hidden": false,
+                "min_font": 13
+              }
+            ],
+            "prefix_rich": [
+              {
+                "txt": "¥",
+                "font": 15,
+                "type": 1
+              }
+            ],
+            "suffix": "起",
+            "color": "#FFFFFF",
+            "descColor": "#9C9C9C",
+            "priceTag": {
+              "txt": "半年低价",
+              "color": "#FFFFFF",
+              "hiddenArrow": 1
+            },
+            "openGroupTxt": "去拼单",
+            "useNewDescLabelsRule": false
+          },
+          "deliveryTimeV2Section": {
+            "icon": "https://funimg.pddpic.com/tag/deliver/52e2a451-ae6e-4b42-963e-3a8b7a8833be.png.slim.png",
+            "mainText": "预计14小时内发货",
+            "subText": "承诺48小时内发货，超时必赔",
+            "subTextSmall": "承诺48小时内发货",
+            "dialogTitle": "发货说明",
+            "dialog": [
+              {
+                "dialogType": "该商品预计14小时内发货",
+                "desc": "订单支付成功后48小时内发货，若未在48小时内发货，消费者将会收到至少3元无门槛代金券",
+                "detailHidden": 0
+              }
+            ]
+          }
+        },
+        "neighborGroup": {
+          "neighbor_status": 1,
+          "neighbor_data": {
+            "combine_group": {
+              "group_total": 1,
+              "combine_group_list": [
+                {
+                  "group_order_id": "3055279744412020805",
+                  "member_info_list": [
+                    {
+                      "nickname": "快乐",
+                      "avatar": "https://avatar3.pddpic.com/avatar/default/6.png",
+                      "is_friend": false
+                    }
+                  ],
+                  "member_count": 1,
+                  "is_self_group": false,
+                  "expire_time": "1756263675",
+                  "button_desc": "去拼单",
+                  "gender": 0,
+                  "group_type": 0,
+                  "is_shared": false,
+                  "tag_list": [],
+                  "track_list": [
+                    {
+                      "page_el_sn": "4264980",
+                      "extra": {
+                        "group_order_id": "3055279744412020805",
+                        "type": 0,
+                        "button_dsc": "去拼单"
+                      }
+                    }
+                  ],
+                  "click_track": {
+                    "page_el_sn": "4264980",
+                    "extra": {
+                      "type": 0,
+                      "button_dsc": "去拼单"
+                    }
+                  },
+                  "group_desc": [
+                    {
+                      "type": 1,
+                      "txt": "差你即可拼到",
+                      "color": "#E02E24",
+                      "font": 13
+                    }
+                  ],
+                  "sku_params": {}
+                }
+              ],
+              "recommend_group": {
+                "group_order_id": "3055279744412020805",
+                "member_info_list": [
+                  {
+                    "nickname": "快乐",
+                    "avatar": "https://avatar3.pddpic.com/avatar/default/6.png",
+                    "is_friend": false
+                  }
+                ],
+                "member_count": 1,
+                "is_self_group": false,
+                "expire_time": "1756263675",
+                "button_desc": "去拼单",
+                "gender": 0,
+                "group_type": 0,
+                "is_shared": false,
+                "tag_list": [],
+                "track_list": [
+                  {
+                    "page_el_sn": "4264980",
+                    "extra": {
+                      "group_order_id": "3055279744412020805",
+                      "type": 0,
+                      "button_dsc": "去拼单"
+                    }
+                  }
+                ],
+                "click_track": {
+                  "page_el_sn": "4264980",
+                  "extra": {
+                    "type": 0,
+                    "button_dsc": "去拼单"
+                  }
+                },
+                "group_desc": [
+                  {
+                    "type": 1,
+                    "txt": "差你即可拼到",
+                    "color": "#E02E24",
+                    "font": 13
+                  }
+                ],
+                "sku_params": {}
+              },
+              "combine_group_desc": "1人在拼，参与可立即拼成",
+              "combine_group_popup_title": "可参与的拼单",
+              "combine_group_popup_footer": "",
+              "combine_group_button_desc": "去拼单",
+              "pulldown_group": {
+                "group_info": {
+                  "group_order_id": "3055279744412020805",
+                  "member_info_list": [
+                    {
+                      "nickname": "快乐",
+                      "avatar": "https://avatar3.pddpic.com/avatar/default/6.png",
+                      "is_friend": false
+                    }
+                  ],
+                  "is_self_group": false,
+                  "expire_time": "1756263675",
+                  "button_desc": "去拼单",
+                  "gender": 0,
+                  "group_type": 0,
+                  "is_shared": false,
+                  "sku_params": {}
+                },
+                "group_title_info": {
+                  "group_title_desc": "还差1人，参与可立即拼成",
+                  "need_join_countdown": true
+                }
+              },
+              "combine_group_list_type": 0,
+              "move_up_group_module_style": 5,
+              "extra_avatar_list": [
+                "https://avatar3.pddpic.com/avatar/default/6.png"
+              ],
+              "is_goods_awkward": false,
+              "extend_map": {
+                "groupModuleTextForHotSaleType": 2,
+                "is_history_and_visitor_group": false,
+                "is_enhance_local_group": false,
+                "platform_context": {
+                  "platform": "PC",
+                  "version": "0.0.0",
+                  "major_version": 0,
+                  "minor_version": 0,
+                  "build_version": 0,
+                  "bugfix_version": 0,
+                  "android_platform": false,
+                  "ios_or_android_platform": false,
+                  "ios_platform": false
+                },
+                "group_total": 1
+              }
+            }
+          }
+        },
+        "control": {
+          "require_mall_active_time": 1,
+          "in_price_tag_gray": 1,
+          "join_group_txt_gray": 1,
+          "quantity_check_request_params": {
+            "from_goods_detail": 1
+          },
+          "ai_assistant_enable": false,
+          "enable_fold_fav_and_mall": false,
+          "h5_forward_func_v2": 1
+        },
+        "transmission": {},
+        "uin": "",
+        "isMobileWeChatPlatform": false,
+        "contextData": {
+          "isNativePlatform": false,
+          "hostname": "mobile.yangkeduo.com",
+          "isMiniProgram": false
+        },
+        "DDType": 2,
+        "isDuoDuoSingleGroup": false,
+        "isDuoDuoDoubleGroup": false,
+        "isNewBottomTips": false,
+        "isLowGroupNewBottomTips": false,
+        "combineGroups": {
+          "groupsTotal": 1,
+          "combineGroupList": [
+            {
+              "group_order_id": "3055279744412020805",
+              "member_info_list": [
+                {
+                  "nickname": "快乐",
+                  "avatar": "https://avatar3.pddpic.com/avatar/default/6.png",
+                  "is_friend": false
+                }
+              ],
+              "member_count": 1,
+              "is_self_group": false,
+              "expire_time": "1756263675",
+              "button_desc": "去拼单",
+              "gender": 0,
+              "group_type": 0,
+              "is_shared": false,
+              "tag_list": [],
+              "track_list": [
+                {
+                  "page_el_sn": "4264980",
+                  "extra": {
+                    "group_order_id": "3055279744412020805",
+                    "type": 0,
+                    "button_dsc": "去拼单"
+                  }
+                }
+              ],
+              "click_track": {
+                "page_el_sn": "4264980",
+                "extra": {
+                  "type": 0,
+                  "button_dsc": "去拼单"
+                }
+              },
+              "group_desc": [
+                {
+                  "type": 1,
+                  "txt": "差你即可拼到",
+                  "color": "#E02E24",
+                  "font": 13
+                }
+              ],
+              "sku_params": {}
+            }
+          ]
+        },
+        "combineUserGroup": {},
+        "groupPopupTitle": "可参与的拼单",
+        "groupPopupFooter": "",
+        "groupButtonDesc": "去拼单",
+        "groupDesc": "3人在拼，参与可立即拼成",
+        "rotationMillSecond": 2000,
+        "startRotationMillSecond": 1000,
+        "moveUpGroupModuleStyle": 5,
+        "newUIGroupData": {
+          "activityGroupModuleCardStyle": 1,
+          "cardColor": "#E02E24",
+          "buttonTextBold": false,
+          "moduleDesc": [],
+          "firstDegreeDesc": []
+        },
+        "groupExtendMap": {},
+        "nowTime": 1766126728,
+        "nowTimeTen": 17661267280,
+        "isABTestGoodsPrerenderOC": true,
+        "isAbDirectOrderRepayModifyPanel": true,
+        "isAbDirectOrderMianmiV2": true,
+        "isAbSwitchToWechatIfSignXyhfFailed": false,
+        "hasAddressLine": false,
+        "ignoreShowSkuSelector": false,
+        "useBestPromotion": true,
+        "usePayPromotion": true,
+        "goodsImageQuantityGrey": false,
+        "goodsImageQuantityParams": {},
+        "isABGoodsRecOffset": false,
+        "isABfastGroupBuyQa": false,
+        "isABLongBannerMode": true,
+        "isGoodsBottomAfterCouponRefresh": true,
+        "isABBottomMallIconStyle": false,
+        "isABWxGotoAppEnforce": false,
+        "ifLiveCouponSkuSelector": true,
+        "showGoodsLabel": true,
+        "guideXyhfCountdown": false,
+        "supportGbs": true,
+        "balanceNotEnoughToMianMi": true,
+        "payCanceledToXyhf": true,
+        "applyDuoDuoPayCancelToMianMi": true,
+        "enableSkuMask": true,
+        "bottomBtnIndex": false,
+        "canRefreshAfterOrder": false,
+        "allowOcHosts": [
+          "mobile.pinduoduo.com"
+        ],
+        "forwardOcHost": "mobile.yangkeduo.com",
+        "livingValidationUrl": "https://renzheng.pinduoduo.com/living-validation/living-validation.html",
+        "useH5FaceCert": true,
+        "bannerHeight": "3.75rem",
+        "isUseRawBackBannerUrl": false,
+        "installmentDesc": "支持先用后付，0元下单，确认收货后再付款",
+        "skuDirectOrderSelectSkuId": 1829805745587,
+        "bottomNotice": {
+          "notice": "",
+          "degrade_notice": "",
+          "notice_type": 0,
+          "priority": 1,
+          "type": 0
+        },
+        "decoration": [],
+        "mall": {
+          "mall_copy_writing": "",
+          "mall_promo_price": 0,
+          "mall_promo_price_version": 0
+        },
+        "allowedRegion": "2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,22,23,24,25,26,27,30,31,32",
+        "costTemplateId": 702289811607086,
+        "costProvinceCodes": "5,9,19,20,21,28,29",
+        "customerNum": 2,
+        "newOptions": [
+          117,
+          7,
+          122,
+          188,
+          60
+        ],
+        "previewShareLink": "",
+        "soldQuantity": 1,
+        "appNew": 0,
+        "weChatOnly": 0,
+        "imageUrl": "https://img.pddpic.com/gaudit-image/2025-12-13/8a427b79548a9aa080fdece20397eb45.jpeg",
+        "isPreSale": 0,
+        "preSaleTime": 0,
+        "rvImage": "",
+        "isMallDsr": false,
+        "skipGoods": "0",
+        "shipmentLimitSecond": 172800,
+        "goodsPropertyType": 0,
+        "hasPromotion": 1,
+        "hasActivity": 1,
+        "createdAt": 1765631531,
+        "offSaleType": -1,
+        "openInFestival": 0,
+        "isHidden": 0,
+        "skuType": 0,
+        "shortName": "养殖兽用奶瓶小猪奶瓶小羊人工喂养动物奶瓶专用兽用250毫升",
+        "skuOutShow": 0,
+        "skuOutShowTitle": "",
+        "servicePromiseVersion": 0,
+        "defaultSkuId": 1829805745587,
+        "hotGoodsFromGin": false,
+        "country": "",
+        "warehouse": "",
+        "hasCost": 0
+      },
+      "mall": {},
+      "liveInfo": null,
+      "queries": {
+        "refer_share_channel": "message",
+        "_oak_share_type": "1",
+        "_t_timestamp": "comm_share_landing",
+        "goods_id": "872145097620"
+      },
+      "isIOS": false,
+      "isSystemIOS": false,
+      "guideConfig": {
+        "waitTime": 20000,
+        "presentTime": 5000
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+      "webp": true,
+      "oakData": {
+        "goods": {
+          "decoration": []
+        }
+      },
+      "isABRafLoadJS": true,
+      "isABChatActiveDuration": true,
+      "isABRefreshToken": true,
+      "referer": ""
+    },
+    "extra": {
+      "mallActiveTimeText": ""
+    },
+    "isNativePlatform": false,
+    "isLiteNativePlatform": false,
+    "isTinyNativePlatform": false,
+    "categoryCouponInfo": {},
+    "popupModalElement": null,
+    "isIOS": false,
+    "isWhiteFont": false,
+    "isTransparentBar": false,
+    "isShowFailingGroupHint": false,
+    "isWeChatMiniProgram": false,
+    "isShowFastGroupBuyTip": false,
+    "skuOcExtend": {},
+    "bannerState": {
+      "currentIndex": 0,
+      "goToPageIndex": 0,
+      "hasShowedSimpleGoods": false,
+      "simpleGoodsList": []
+    },
+    "fakeAppDownloadShow": false,
+    "withBtnScaleAnimation": false,
+    "appCouponGray": 0,
+    "appDownloadCouponGray": 0,
+    "ifHigherMallInfo": false,
+    "ifHasPushState": false,
+    "abTestValues": {},
+    "animationControllers": [],
+    "animationGroupTimer": null,
+    "mallDetailInfo": {},
+    "viewCtx": {},
+    "detailsIsInner": false,
+    "funcAssemblySet": {},
+    "$isSupportWebp": true,
+    "isHarmonyBApp": false,
+    "goodsCommentsInLayerGrey": false,
+    "goodsSkuImageHotGrey": false,
+    "goodsImageQuantityGrey": false,
+    "goodsImageQuantityParams": {},
+    "isDDMCMiniProgram": false,
+    "isABGoodsStreamRender": true,
+    "isServerRendered": true,
+    "isFinishInitLoading": true,
+    "isPreClientDataFetch": false,
+    "services": {},
+    "bannerData": {
+      "shareIndex": 0,
+      "pictureList": [
+        {
+          "originUrl": "https://img.pddpic.com/mms-material-img/2021-03-05/262a9ed0-4917-48e6-96ea-c01808e38f3c.jpeg.a.jpeg",
+          "url": "https://img.pddpic.com/mms-material-img/2021-03-05/262a9ed0-4917-48e6-96ea-c01808e38f3c.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909033
+        },
+        {
+          "originUrl": "https://img.pddpic.com/mms-material-img/2021-03-05/7347d0ba-f464-434f-925f-3287d786fe19.jpeg.a.jpeg",
+          "url": "https://img.pddpic.com/mms-material-img/2021-03-05/7347d0ba-f464-434f-925f-3287d786fe19.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909034
+        },
+        {
+          "originUrl": "https://img.pddpic.com/mms-material-img/2021-03-05/a217fe9f-977d-4cc1-ba0f-98f2d18bd090.jpeg.a.jpeg",
+          "url": "https://img.pddpic.com/mms-material-img/2021-03-05/a217fe9f-977d-4cc1-ba0f-98f2d18bd090.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909035
+        },
+        {
+          "originUrl": "https://img.pddpic.com/mms-material-img/2021-03-05/8bd87a8b-1b5e-43bf-b62b-5af46a90b0ca.jpeg.a.jpeg",
+          "url": "https://img.pddpic.com/mms-material-img/2021-03-05/8bd87a8b-1b5e-43bf-b62b-5af46a90b0ca.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909036
+        },
+        {
+          "originUrl": "https://img.pddpic.com/mms-material-img/2021-03-05/23342384-5499-4bda-9b0e-643e8c14e4f6.jpeg.a.jpeg",
+          "url": "https://img.pddpic.com/mms-material-img/2021-03-05/23342384-5499-4bda-9b0e-643e8c14e4f6.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909037
+        },
+        {
+          "originUrl": "https://img.pddpic.com/mms-material-img/2021-03-05/07d8a142-5db9-48e3-a6f8-15e77740332b.jpeg.a.jpeg",
+          "url": "https://img.pddpic.com/mms-material-img/2021-03-05/07d8a142-5db9-48e3-a6f8-15e77740332b.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909038
+        },
+        {
+          "originUrl": "https://img.pddpic.com/mms-material-img/2021-03-05/5f7bfae3-638d-4e61-a589-3c7d403de23b.jpeg.a.jpeg",
+          "url": "https://img.pddpic.com/mms-material-img/2021-03-05/5f7bfae3-638d-4e61-a589-3c7d403de23b.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909039
+        },
+        {
+          "originUrl": "https://img.pddpic.com/mms-material-img/2021-03-05/bd5d7b55-cfad-44b3-b3e8-a965b0ce1696.jpeg.a.jpeg",
+          "url": "https://img.pddpic.com/mms-material-img/2021-03-05/bd5d7b55-cfad-44b3-b3e8-a965b0ce1696.jpeg.a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909040
+        },
+        {
+          "originUrl": "https://img.pddpic.com/goods/images/2021-03-05/d98dd384-cf48-463c-b115-b278b326e19a.jpeg",
+          "url": "https://img.pddpic.com/goods/images/2021-03-05/d98dd384-cf48-463c-b115-b278b326e19a.jpeg?imageView2/2/w/1300/q/80",
+          "id": 1469943909041
+        }
+      ],
+      "videoData": []
+    },
+    "isShowGoodsCouponModal": true
+  }
+}

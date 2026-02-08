@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/工具/MediaCrawler" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/工具/内存漫游/ast-hook-for-js-RE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/工具/指纹浏览器/localAPI" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/工具/解混淆/decodeObfuscator" vcs="Git" />
   </component>
 </project>
