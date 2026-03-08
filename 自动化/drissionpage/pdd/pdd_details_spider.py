@@ -16,7 +16,7 @@ from DrissionPage import ChromiumPage, ChromiumOptions
 
 # --- 配置 ---
 LOCAL_API_BASE = "http://127.0.0.1:50325"
-Browser_ID = "k19j3unu"
+Browser_ID = "k19ka47x"
 ApiKey = "1f40b245aa0603c023b611b3c28f0d0d00827004cc21a0ae"
 
 # 状态记录
@@ -93,17 +93,36 @@ def handle_detail_save(resp):
 
 def main():
     # 1. 启动并连接浏览器
-    start_resp = requests.post(f"{LOCAL_API_BASE}/api/v2/browser-profile/start",
-                               headers={'Authorization': f'Bearer {ApiKey}'},
-                               json={"profile_id": Browser_ID}).json()
-    if start_resp.get('code') != 0: return
+    # start_resp = requests.post(f"{LOCAL_API_BASE}/api/v2/browser-profile/start",
+    #                            headers={'Authorization': f'Bearer {ApiKey}'},
+    #                            json={"profile_id": Browser_ID}).json()
+    # print(f"resp: {start_resp}")
+    # if start_resp.get('code') != 0: return
+    #
+    # co = ChromiumOptions().set_address(start_resp['data']['ws']['puppeteer'])
+    #
 
-    co = ChromiumOptions().set_address(start_resp['data']['ws']['selenium'])
+    resp = requests.get(
+        f"{LOCAL_API_BASE}/api/v2/browser-profile/active",
+        headers={'Authorization': f'Bearer {ApiKey}'},
+        params={"profile_id": Browser_ID}
+    ).json()
+
+    print(resp)
+    if resp['data']['status'] != 'Active':
+        raise Exception("浏览器未打开")
+
+    cdp_ws = resp['data']['ws']['puppeteer']
+
+    # 连接
+    co = ChromiumOptions().set_address(cdp_ws)
     dp = ChromiumPage(addr_or_opts=co)
+
     dp.listen.start('goods.html')
 
     print("🚀 正在加载列表页...")
     dp.get("https://mobile.yangkeduo.com/")
+    dp.wait(15)
     time.sleep(2)
 
     scroll_count = 0

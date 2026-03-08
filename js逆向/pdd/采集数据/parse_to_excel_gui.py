@@ -441,9 +441,7 @@ class PddParserUltimate:
             spec1_values,       # 规格一内容
             spec2_name,         # 规格二
             spec2_values,       # 规格二内容
-            '', '',             # 规格图片预览、图片预览（占位，用于嵌入图片）
-            sku_image_str,      # 规格图片URL
-            main_images,        # 图片URL
+            '', '',             # 规格图片、图片（占位，用于嵌入图片）
             weight,             # 重量
             stock_str,          # 库存（||分隔）
             site                # 站点
@@ -459,7 +457,7 @@ class PddParserUltimate:
         wb = Workbook()
         ws = wb.active
         headers = ['产品ID', '标题', '商品描述', '分类ID', '价格', '规格一', '规格一内容', 
-                   '规格二', '规格二内容', '规格图片预览', '图片预览', '规格图片', '图片', '重量', '库存', '站点']
+                   '规格二', '规格二内容', '规格图片', '图片', '重量', '库存', '站点']
         ws.append(headers)
 
         # 美化表头
@@ -512,7 +510,7 @@ class PddParserUltimate:
         self.logger.log(f"准备嵌入：SKU图片 {total_sku_imgs} 张，主图 {total_main_imgs} 张", "INFO")
         
         for r_idx, images in row_image_map.items():
-            # 嵌入规格图片（J列，第10列 - 规格图片预览）
+            # 嵌入规格图片（J列，第10列）
             x_offset = 0
             for url in images['sku']:
                 if url in img_cache and img_cache[url]:
@@ -532,7 +530,7 @@ class PddParserUltimate:
                 else:
                     failed_embed += 1
             
-            # 嵌入主图（K列，第11列 - 图片预览）
+            # 嵌入主图（K列，第11列）
             x_offset = 0
             for url in images['main']:
                 if url in img_cache and img_cache[url]:

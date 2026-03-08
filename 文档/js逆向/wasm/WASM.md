@@ -225,11 +225,48 @@ print(sign)
 
 
 
+#### 6.补环境脚本
+
+```js
+function WASMProxy(obj, name) {
+    return new Proxy(obj, {
+        get(target, propKey, receiver) {
+            let temp = Reflect.get(target, propKey, receiver);
+            let propType = typeof temp;
+            console.log(`方法: get 对象: ${name} 属性: ${propKey.toString()} 属性类型: ${propType} 属性值类型: ${typeof temp}`);
+            if (typeof temp === 'object' && temp !== null) {
+                temp = WASMProxy(temp, `${name}->${propKey.toString()}`);
+            }
+            return temp;
+        },
+        set(target, propKey, value, receiver) {
+            let valueType = typeof value;
+            let temp = Reflect.set(target, propKey, value);
+            console.log(`方法: set 对象: ${name} 属性: ${propKey.toString()} 属性类型: ${typeof target[propKey]} 属性值类型: ${valueType}`);
+            return temp;
+        }
+    });
+}
+
+```
 
 
 
+> 使用方法
+
+```js
+global = WASMProxy(global,'global')
+// 加载wasm之前代理
+go.run(result.instance)
+```
 
 
+
+ 如果代理window就
+
+```js
+window = WASMProxy(window,'window')
+```
 
 
 
