@@ -33,9 +33,11 @@ jobs:
       with:
         name: parse_to_excel_v4
         path: js 逆向/pdd/采集数据/dist/parse_to_excel_v4.exe
+        retention-days: 30
         
     - name: Create Release
       if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: js 逆向/pdd/采集数据/dist/parse_to_excel_v4.exe
+        generate_release_notes: true
