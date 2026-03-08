@@ -499,6 +499,18 @@ class PddParserV2:
                         if img_url:
                             detail_images.append(img_url)
         
+        # 如果decoration为空，尝试从detailGallery获取详情图
+        if not detail_images:
+            detail_gallery = goods.get('detailGallery', [])
+            if detail_gallery:
+                for item in detail_gallery:
+                    if isinstance(item, dict):
+                        url = item.get('url') or item.get('image_url') or item.get('img_url')
+                        if url:
+                            detail_images.append(url)
+                    elif isinstance(item, str):
+                        detail_images.append(item)
+        
         # 整理图片URL字符串
         sku_image_url_str = '||'.join([img for img in sku_images if img])
         main_images_url_str = '||'.join([url for url in m_urls if url])
