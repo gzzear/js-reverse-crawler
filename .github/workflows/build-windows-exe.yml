@@ -17,33 +17,11 @@ jobs:
     - uses: actions/checkout@v4
       with:
         lfs: false
-        submodules: false
     
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-    
-    - name: List all directories
-      run: |
-        Write-Host "=== Root ==="
-        Get-ChildItem -Force | Select-Object Name
-        Write-Host "=== js* ==="
-        Get-ChildItem -Directory -Filter "js*" | Select-Object Name
-    
-    - name: Find Python file
-      run: |
-        $files = Get-ChildItem -Recurse -Filter "parse_to_excel_gui_v4.py" -ErrorAction SilentlyContinue
-        Write-Host "Found $($files.Count) file(s):"
-        foreach ($f in $files) {
-          Write-Host "  $($f.FullName)"
-        }
-        if ($files.Count -gt 0) {
-          $global:projectDir = $files[0].DirectoryName
-          Write-Host "Using: $global:projectDir"
-        } else {
-          throw "File not found!"
-        }
     
     - name: Install dependencies
       run: |
@@ -52,9 +30,8 @@ jobs:
     
     - name: Build EXE
       run: |
-        if (-not $global:projectDir) { throw "Project directory not found" }
-        Write-Host "Building in: $global:projectDir"
-        Set-Location $global:projectDir
+        Set-Location pdd_tool
+        Write-Host "Building in: $(pwd)"
         pyinstaller --onefile --name parse_to_excel_v4 parse_to_excel_gui_v4.py --clean
         Write-Host "Build complete!"
         Get-ChildItem dist\
@@ -63,12 +40,12 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: parse_to_excel_v4
-        path: "**/dist/parse_to_excel_v4.exe"
+        path: pdd_tool/dist/parse_to_excel_v4.exe
         retention-days: 30
     
     - name: Create Release
       if: startsWith(github.ref, 'refs/tags/')
       uses: softprops/action-gh-release@v2
       with:
-        files: "**/dist/parse_to_excel_v4.exe"
+        files: pdd_tool/dist/parse_to_excel_v4.exe
         generate_release_notes: true
