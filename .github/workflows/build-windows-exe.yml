@@ -12,6 +12,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v4
+      with:
+        lfs: false
     
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -22,25 +24,27 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pyinstaller requests openpyxl Pillow
-        
+    
     - name: Build EXE
-      shell: bash
+      shell: pwsh
       run: |
-        cd "js 逆向/pdd/采集数据"
+        $path = "js 逆向/pdd/采集数据"
+        Write-Host "Working directory: $path"
+        Set-Location $path
         python -m pip install --upgrade pip
         pip install pyinstaller requests openpyxl Pillow
-        pyinstaller --onefile --name parse_to_excel_v4 parse_to_excel_gui_v4.py
-        
+        pyinstaller --onefile --name parse_to_excel_v4 parse_to_excel_gui_v4.py --clean
+    
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: parse_to_excel_v4
-        path: js 逆向/pdd/采集数据/dist/parse_to_excel_v4.exe
+        path: "js 逆向/pdd/采集数据/dist/parse_to_excel_v4.exe"
         retention-days: 30
-        
+    
     - name: Create Release
       if: startsWith(github.ref, 'refs/tags/')
       uses: softprops/action-gh-release@v2
       with:
-        files: js 逆向/pdd/采集数据/dist/parse_to_excel_v4.exe
+        files: "js 逆向/pdd/采集数据/dist/parse_to_excel_v4.exe"
         generate_release_notes: true
