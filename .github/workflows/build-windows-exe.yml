@@ -6,6 +6,9 @@ on:
       - 'v*'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-windows:
     runs-on: windows-latest
@@ -23,41 +26,60 @@ jobs:
       with:
         python-version: '3.11'
     
-    - name: List files
+    - name: Debug - List all files
       run: |
-        Write-Host "=== Current Directory ==="
-        Get-Location
-        Write-Host "=== pdd_tool Directory ==="
+        Write-Host "`n=== ROOT DIRECTORY ==="
+        Get-ChildItem -Force | ForEach-Object { Write-Host "  $($_.Name)" }
+        
+        Write-Host "`n=== pdd_tool DIRECTORY ==="
         if (Test-Path "pdd_tool") {
-          Get-ChildItem pdd_tool | Select-Object Name
-          Write-Host "✅ pdd_tool directory found"
+          Get-ChildItem "pdd_tool" -Force | ForEach-Object { Write-Host "  $($_.Name)" }
         } else {
-          Write-Host "❌ ERROR: pdd_tool directory not found!"
-          exit 1
+          Write-Host "  ERROR: pdd_tool not found!"
+          Get-ChildItem -Recurse -Filter "parse_to_excel*.py" | ForEach-Object {
+            Write-Host "  Found: $($_.FullName)"
+          }
         }
     
     - name: Install dependencies
       run: |
-        Write-Host "=== Installing dependencies ==="
+        Write-Host "`n=== INSTALLING DEPENDENCIES ==="
         python -m pip install --upgrade pip
         pip install pyinstaller requests openpyxl Pillow
         Write-Host "✅ Dependencies installed"
     
     - name: Build EXE
+      id: build
       run: |
-        Write-Host "=== Starting build ==="
+        Write-Host "`n=== BUILDING EXE ==="
+        
+        if (-not (Test-Path "pdd_tool")) {
+          Write-Host "ERROR: pdd_tool directory not found!"
+          exit 1
+        }
+        
         Set-Location pdd_tool
         Write-Host "Working directory: $(Get-Location)"
         
+        Write-Host "`n=== FILES IN DIRECTORY ==="
+        Get-ChildItem | ForEach-Object { Write-Host "  $($_.Name)" }
+        
+        Write-Host "`n=== RUNNING PYINSTALLER ==="
+        $env:PYTHONUTF8 = "1"
         $env:PYTHONIOENCODING = "utf-8"
+        
         pyinstaller --onefile --name parse_to_excel_v4 parse_to_excel_gui_v4.py --clean
         
         if ($LASTEXITCODE -eq 0) {
-          Write-Host "`n✅ Build successful!"
-          Write-Host "Generated files:"
-          Get-ChildItem dist\ | Select-Object Name, Length
+          Write-Host "`n✅ BUILD SUCCESSFUL!"
+          Write-Host "`n=== GENERATED FILES ==="
+          if (Test-Path "dist") {
+            Get-ChildItem "dist" | ForEach-Object {
+              Write-Host "  $($_.Name) ($([math]::Round($_.Length / 1MB, 2)) MB)"
+            }
+          }
         } else {
-          Write-Host "`n❌ Build failed!"
+          Write-Host "`n❌ BUILD FAILED!"
           exit 1
         }
     
@@ -77,4 +99,3 @@ jobs:
         generate_release_notes: true
         draft: false
         make_latest: true
-      continue-on-error: true
