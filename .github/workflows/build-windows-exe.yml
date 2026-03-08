@@ -24,8 +24,11 @@ jobs:
         pip install pyinstaller requests openpyxl Pillow
         
     - name: Build EXE
+      shell: bash
       run: |
         cd "js 逆向/pdd/采集数据"
+        python -m pip install --upgrade pip
+        pip install pyinstaller requests openpyxl Pillow
         pyinstaller --onefile --name parse_to_excel_v4 parse_to_excel_gui_v4.py
         
     - name: Upload artifact
