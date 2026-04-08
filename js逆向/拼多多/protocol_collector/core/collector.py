@@ -5,6 +5,7 @@ import threading
 import traceback
 from collections import deque
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Callable, Optional
 
 from PyQt6.QtCore import QObject, QThread, pyqtSignal
@@ -25,12 +26,14 @@ class CollectorConfig:
     proxy: Optional[Proxy] = None
     death_threshold: int = 5
     max_retries: int = 3                # per-gid retries before giving up
+    output_dir: Optional[Path] = None
 
 
 class CollectorWorker(QObject):
     log = pyqtSignal(str, str)              # (level, text) — level in INFO/OK/WARN/ERR
     progress = pyqtSignal(int, int)          # (done, total)
     cookie_updated = pyqtSignal(int)         # row index in pool
+    gid_consumed = pyqtSignal(str)           # emitted once when a gid reaches terminal state
     finished = pyqtSignal()
 
     def __init__(self, config: CollectorConfig, cookie_pool: CookiePool) -> None:
@@ -43,7 +46,7 @@ class CollectorWorker(QObject):
         self._stop = threading.Event()
         self._done = 0
         self._total = len(config.urls)
-        self._writer = ResultWriter()
+        self._writer = ResultWriter(out_dir=config.output_dir) if config.output_dir else ResultWriter()
         self._client = PddClient(ua=config.ua, proxy=config.proxy)
         # track per-cookie consecutive uses for rotation
         self._cookie_uses: dict[int, int] = {}
@@ -140,6 +143,7 @@ class CollectorWorker(QObject):
                     self._record_failure(gid)
                     done = self._bump_done()
                     self.progress.emit(done, self._total)
+                    self.gid_consumed.emit(gid)
                 else:
                     self._push_front(gid)
 
@@ -153,6 +157,7 @@ class CollectorWorker(QObject):
                 self._record_failure(gid)
                 done = self._bump_done()
                 self.progress.emit(done, self._total)
+                self.gid_consumed.emit(gid)
                 continue
             except RefusedError as e:
                 self._pool.report_failure(cookie)
@@ -168,6 +173,7 @@ class CollectorWorker(QObject):
                 self._record_failure(gid)
                 done = self._bump_done()
                 self.progress.emit(done, self._total)
+                self.gid_consumed.emit(gid)
                 continue
             except Exception as e:
                 self._pool.report_failure(cookie)
@@ -194,6 +200,7 @@ class CollectorWorker(QObject):
             except ValueError:
                 rel = path.name
             self.log.emit("OK", f"[T{thread_idx}] goods_id={gid} → {rel}")
+            self.gid_consumed.emit(gid)
             self._interruptible_sleep(self._cfg.interval_sec)
 
     def _cookie_row(self, cookie: CookieEntry) -> int:
@@ -250,6 +257,7 @@ class CollectorController:
         on_progress: Callable[[int, int], None],
         on_cookie_updated: Callable[[int], None],
         on_finished: Callable[[], None],
+        on_gid_consumed: Optional[Callable[[str], None]] = None,
     ) -> None:
         self.stop_blocking()
         self.thread = QThread()
@@ -258,6 +266,8 @@ class CollectorController:
         self.worker.log.connect(on_log)
         self.worker.progress.connect(on_progress)
         self.worker.cookie_updated.connect(on_cookie_updated)
+        if on_gid_consumed is not None:
+            self.worker.gid_consumed.connect(on_gid_consumed)
         self.worker.finished.connect(on_finished)
         self.worker.finished.connect(self.thread.quit)
         self.thread.started.connect(self.worker.run)
