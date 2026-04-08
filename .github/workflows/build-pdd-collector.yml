@@ -15,6 +15,10 @@ jobs:
   build:
     runs-on: windows-latest
     
+    defaults:
+      run:
+        working-directory: js逆向/拼多多/protocol_collector
+        
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -28,13 +32,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r js逆向/拼多多/protocol_collector/requirements.txt
+        pip install -r requirements.txt
         pip install pyinstaller>=6.0
         
     - name: Build EXE with PyInstaller
       shell: pwsh
       run: |
-        cd js逆向/拼多多/protocol_collector
         pyinstaller --clean `
           --name "拼多多协议采集工具" `
           --windowed `
@@ -70,6 +73,3 @@ jobs:
         path: js逆向/拼多多/protocol_collector/dist/拼多多协议采集工具.exe
         retention-days: 30
         
-    # 不再创建 Release，直接通过 Artifact 下载
-    # Release 需要 tag 推送权限且容易失败
-    # Artifact 稳定可靠，可直接下载
