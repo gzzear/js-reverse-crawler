@@ -1,9 +1,9 @@
-name: Build Windows EXE
+name: Build PDD Collector EXE
 
 on:
   push:
     tags:
-      - 'v*'
+      - 'collector-v*'
   workflow_dispatch:
     inputs:
       version:
@@ -28,12 +28,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r js逆向/拼多多/protocol_collector/requirements.txt
         pip install pyinstaller>=6.0
         
     - name: Build EXE with PyInstaller
       shell: pwsh
       run: |
+        cd js逆向/拼多多/protocol_collector
         pyinstaller --clean `
           --name "拼多多协议采集工具" `
           --windowed `
@@ -53,20 +54,20 @@ jobs:
     - name: Verify build
       shell: pwsh
       run: |
-        if (Test-Path "dist\拼多多协议采集工具.exe") {
+        if (Test-Path "js逆向/拼多多/protocol_collector/dist/拼多多协议采集工具.exe") {
           Write-Host "✓ Build successful!"
-          Get-Item "dist\拼多多协议采集工具.exe" | Select-Object Name, Length
+          Get-Item "js逆向/拼多多/protocol_collector/dist/拼多多协议采集工具.exe" | Select-Object Name, Length
         } else {
           Write-Error "✗ Build failed - EXE not found"
-          dir dist
+          dir js逆向/拼多多/protocol_collector/dist
           exit 1
         }
         
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: pdd-protocol-collector-${{ github.event.inputs.version || github.ref_name }}
-        path: dist/拼多多协议采集工具.exe
+        name: pdd-collector-${{ github.event.inputs.version || github.ref_name }}
+        path: js逆向/拼多多/protocol_collector/dist/拼多多协议采集工具.exe
         retention-days: 30
         
     - name: Create Release
@@ -74,7 +75,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         name: 拼多多协议采集工具 ${{ github.event.inputs.version || github.ref_name }}
-        files: dist/拼多多协议采集工具.exe
+        files: js逆向/拼多多/protocol_collector/dist/拼多多协议采集工具.exe
         generate_release_notes: true
         draft: true
       env:

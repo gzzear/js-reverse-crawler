@@ -1,0 +1,1059 @@
+{
+  "store": {
+    "errorRedirectUrl": "/",
+    "isPre": false,
+    "$likeMallText": "关注",
+    "$likeMallEntryTip": "关注的店铺可在个人中心的“店铺关注”入口查看",
+    "preRenderBannerSrc": null,
+    "preRenderHideNoFirstScreenContent": false,
+    "preRenderShowMock": false,
+    "initDataObj": {
+      "goods": {
+        "serverTime": 1775624919.028,
+        "serverTimeTen": 17756249190.280003,
+        "weakenGoodsName": 0,
+        "catID": 7879,
+        "goodsID": 558015059353,
+        "brandId": "",
+        "goodsName": "适用北京现代老款伊兰特方向盘套06 07 08 09 10 11 12车把套防滑",
+        "goodsType": 1,
+        "localGroups": [],
+        "hasLocalGroup": 0,
+        "topGallery": [
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/cac40c0a-4d29-4fd7-93f8-c42d9893c6a3.jpeg.a.jpeg",
+            "id": 1104964257375,
+            "aspectRatio": 1
+          }
+        ],
+        "viewImageData": [
+          "https://img.pddpic.com/mms-material-img/2023-11-22/cac40c0a-4d29-4fd7-93f8-c42d9893c6a3.jpeg.a.jpeg"
+        ],
+        "detailGallery": [
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/597ac266-6457-4ab6-806a-1c77d11b5191.jpeg.a.jpeg",
+            "width": 800,
+            "height": 800
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/97c2a7af-832f-4c44-a0b5-6e35356a81da.jpeg.a.jpeg",
+            "width": 790,
+            "height": 1278
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/02ef046c-9bdc-42c9-a378-137667bcf5f9.jpeg.a.jpeg",
+            "width": 790,
+            "height": 1147
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/0535093f-0227-4e5b-8c4c-71a4efc9cce0.jpeg.a.jpeg",
+            "width": 790,
+            "height": 1317
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/cc1686d3-e3b2-4e3e-9857-37d75965236d.jpeg.a.jpeg",
+            "width": 790,
+            "height": 1222
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/9d42dec0-0c4c-4571-9790-ba137cb6b39d.jpeg.a.jpeg",
+            "width": 790,
+            "height": 1405
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/52ab03ba-494a-4ba9-90a5-bb69c3d1de8d.jpeg.a.jpeg",
+            "width": 790,
+            "height": 1147
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/969b8bcc-e347-4541-a8cd-6c89876f9db6.png.a.jpeg",
+            "width": 790,
+            "height": 765
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/80975de3-85d8-4387-8b73-2346b527e122.png.a.jpeg",
+            "width": 790,
+            "height": 765
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/ee3e9789-623b-43b8-9902-fc7e22267eb9.jpeg.a.jpeg",
+            "width": 790,
+            "height": 775
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/ef377bd3-0bb6-4e35-9000-c38e6ea6eec4.jpeg.a.jpeg",
+            "width": 790,
+            "height": 1402
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/82d19536-f278-4380-a569-36965fc678fd.jpeg.a.jpeg",
+            "width": 790,
+            "height": 1252
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/ae9574ae-f8e3-4ba4-b4fe-6cebe71a2723.jpeg.a.jpeg",
+            "width": 790,
+            "height": 859
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/34e94b2f-8158-4972-ada2-5044b0ad2748.jpeg.a.jpeg",
+            "width": 790,
+            "height": 858
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/fc02e241-3422-4d6a-9eac-909afa0ea13b.jpeg.a.jpeg",
+            "width": 790,
+            "height": 853
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/ff0fbfdb-d4c5-4a44-9773-0d7118db2e80.jpeg.a.jpeg",
+            "width": 790,
+            "height": 858
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/b53fb394-87df-47b5-982c-8d8ff90dda03.jpeg.a.jpeg",
+            "width": 790,
+            "height": 867
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/13da35be-70ca-4dc0-ac7c-cef5b3ed7f6a.jpeg.a.jpeg",
+            "width": 790,
+            "height": 852
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/5a5936fd-73d0-4820-8d50-e2703c7faf2f.jpeg.a.jpeg",
+            "width": 790,
+            "height": 859
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/c746f047-b3fe-41b6-b1ef-fb85b1342c2c.jpeg.a.jpeg",
+            "width": 790,
+            "height": 853
+          },
+          {
+            "url": "https://img.pddpic.com/mms-material-img/2023-11-22/1da5a00b-7a5f-4823-9da8-7138fd66266c.jpeg.a.jpeg",
+            "width": 790,
+            "height": 856
+          }
+        ],
+        "videoGallery": [],
+        "descVideoGallery": [],
+        "mallID": 318617689,
+        "groupTypes": [
+          {
+            "requireNum": "1",
+            "price": "0",
+            "groupID": 102672155158,
+            "startTime": 1451577600,
+            "endTime": 2082729600,
+            "orderLimit": 999999
+          },
+          {
+            "requireNum": "2",
+            "price": "0",
+            "groupID": 102672155159,
+            "startTime": 1451577600,
+            "endTime": 2082729600,
+            "orderLimit": 999999
+          }
+        ],
+        "skus": [
+          {
+            "skuId": 1509982148223,
+            "quantity": 958,
+            "isOnsale": 1,
+            "skuID": 1509982148223,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148224,
+            "quantity": 896,
+            "isOnsale": 1,
+            "skuID": 1509982148224,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148225,
+            "quantity": 989,
+            "isOnsale": 1,
+            "skuID": 1509982148225,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148226,
+            "quantity": 996,
+            "isOnsale": 1,
+            "skuID": 1509982148226,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148227,
+            "quantity": 998,
+            "isOnsale": 1,
+            "skuID": 1509982148227,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148228,
+            "quantity": 978,
+            "isOnsale": 1,
+            "skuID": 1509982148228,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148229,
+            "quantity": 950,
+            "isOnsale": 1,
+            "skuID": 1509982148229,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148230,
+            "quantity": 996,
+            "isOnsale": 1,
+            "skuID": 1509982148230,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148231,
+            "quantity": 993,
+            "isOnsale": 1,
+            "skuID": 1509982148231,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          },
+          {
+            "skuId": 1509982148232,
+            "quantity": 995,
+            "isOnsale": 1,
+            "skuID": 1509982148232,
+            "thumbUrl": "",
+            "normalPrice": "0",
+            "groupPrice": "0",
+            "normalSavePrice": "0",
+            "skuExpansionPrice": "0"
+          }
+        ],
+        "thumbUrl": "",
+        "hdThumbUrl": "",
+        "eventType": 0,
+        "isApp": 0,
+        "isFreshmanApp": 0,
+        "catID1": 7639,
+        "catID2": 7720,
+        "catID3": 7879,
+        "catID4": 0,
+        "spuID": 0,
+        "eventComing": false,
+        "isSpike": false,
+        "isTodaySpike": false,
+        "isTomorrowSpike": false,
+        "isSpikeComing": false,
+        "gpv": null,
+        "quickRefund": false,
+        "rv": false,
+        "maxNormalPrice": "0",
+        "minNormalPrice": "0",
+        "maxGroupPrice": "0",
+        "minGroupPrice": "0",
+        "maxOnSaleGroupPrice": "0",
+        "minOnSaleGroupPrice": "0",
+        "maxOnSaleNormalPrice": "0",
+        "minOnSaleNormalPrice": "0",
+        "unselectNormalSavePrice": "0",
+        "skipGoodsIDs": [
+          ""
+        ],
+        "tag": null,
+        "icon": null,
+        "tagIcon": [],
+        "isColdGoods": 0,
+        "goodsProperty": [
+          {
+            "key": "材质",
+            "values": [
+              "人造革"
+            ],
+            "ref_pid": 317,
+            "reference_id": 0
+          },
+          {
+            "key": "适用季节",
+            "values": [
+              "不限季节"
+            ],
+            "ref_pid": 1885,
+            "reference_id": 0
+          },
+          {
+            "key": "使用对象",
+            "values": [
+              "通用"
+            ],
+            "ref_pid": 1255,
+            "reference_id": 0
+          }
+        ],
+        "skuProperty": [],
+        "linePrice": "0",
+        "priceStyle": 0,
+        "quicklyExpire": {},
+        "goodsExpansionPrice": "0",
+        "beforeRemindSeconds": 300,
+        "bottomBanner": null,
+        "isAppFlow": true,
+        "groupNumFull": false,
+        "promptExplain": "",
+        "isAbnormalStatus": false,
+        "statusExplain": "",
+        "hideMall": false,
+        "isMallRec": false,
+        "status": 1,
+        "isGoodsOnSale": true,
+        "isSkuOnSale": true,
+        "isOnSale": true,
+        "quantity": 1000,
+        "options": [
+          54,
+          7,
+          9,
+          60,
+          13
+        ],
+        "eventTime": 1775624919.028,
+        "mallService": {
+          "service": [],
+          "vipService": {},
+          "honorService": {}
+        },
+        "skuDirectOrder": false,
+        "ambiguousPrice": 1,
+        "ui": {
+          "new_price_section": {
+            "is_normal": 1,
+            "type": "normal",
+            "price": "2?.??",
+            "price_rich": [
+              {
+                "txt": "2?.??",
+                "font": 28,
+                "type": 1
+              }
+            ],
+            "prefix_rich": [
+              {
+                "txt": "券后",
+                "font": 14,
+                "type": 1
+              },
+              {
+                "type": 2,
+                "space": 2
+              },
+              {
+                "txt": "¥",
+                "font": 15,
+                "type": 1
+              }
+            ],
+            "prefix_icon": {
+              "url": "https://commimg.pddpic.com/upload/ddpay/11a3cba0-62fa-4612-bf2c-eae726dc9936.png",
+              "width": 17,
+              "height": 16
+            },
+            "color": "#E02E24",
+            "bg_color": "#FFFFFF",
+            "desc_color": "#58595B",
+            "imp_tracks": [
+              {
+                "extra": {
+                  "type": 0
+                },
+                "page_el_sn": "5049756"
+              }
+            ],
+            "is_elder": 0,
+            "use_new_desc_labels_rule": false
+          },
+          "new_bottom_section_degrade": {
+            "right_button": {
+              "title": [
+                {
+                  "txt": "发起拼单",
+                  "font": 17,
+                  "type": 1
+                }
+              ],
+              "click_action": "groupBuy",
+              "text_color": "#FFFFFF",
+              "bg_color": "#E02E24",
+              "text_click_color": "#EDBBB8",
+              "bg_click_color": "#C51E14",
+              "use_backup": 0,
+              "imp_tracks": [
+                {
+                  "extra": {
+                    "type": 0
+                  },
+                  "page_el_sn": "99811"
+                }
+              ],
+              "click_track": {
+                "extra": {
+                  "type": 0
+                },
+                "page_el_sn": "99811"
+              }
+            }
+          },
+          "title_section": {}
+        },
+        "control": {
+          "ai_assistant_enable": false,
+          "enable_fold_fav_and_mall": false,
+          "ambiguous_price": 1
+        },
+        "transmission": {},
+        "uin": "LV3EGMI4DW25A5FXQW5UDQARXI_GEXDA",
+        "isMobileWeChatPlatform": false,
+        "contextData": {
+          "isNativePlatform": false,
+          "hostname": "mobile.yangkeduo.com",
+          "isMiniProgram": false
+        },
+        "DDType": false,
+        "isDuoDuoSingleGroup": false,
+        "isDuoDuoDoubleGroup": false,
+        "isNewBottomTips": false,
+        "isLowGroupNewBottomTips": false,
+        "nowTime": 1775624919.028,
+        "nowTimeTen": 17756249190.280003,
+        "isABTestGoodsPrerenderOC": true,
+        "isAbDirectOrderRepayModifyPanel": true,
+        "isAbDirectOrderMianmiV2": true,
+        "isAbSwitchToWechatIfSignXyhfFailed": false,
+        "hasAddressLine": false,
+        "ignoreShowSkuSelector": false,
+        "useBestPromotion": true,
+        "usePayPromotion": true,
+        "goodsImageQuantityGrey": false,
+        "goodsImageQuantityParams": {},
+        "isABGoodsRecOffset": false,
+        "isABfastGroupBuyQa": false,
+        "isABLongBannerMode": true,
+        "isGoodsBottomAfterCouponRefresh": true,
+        "isABBottomMallIconStyle": false,
+        "isABWxGotoAppEnforce": false,
+        "ifLiveCouponSkuSelector": true,
+        "showGoodsLabel": true,
+        "guideXyhfCountdown": false,
+        "supportGbs": true,
+        "balanceNotEnoughToMianMi": true,
+        "payCanceledToXyhf": true,
+        "applyDuoDuoPayCancelToMianMi": true,
+        "enableSkuMask": true,
+        "bottomBtnIndex": false,
+        "canRefreshAfterOrder": false,
+        "allowOcHosts": [
+          "mobile.pinduoduo.com"
+        ],
+        "forwardOcHost": "mobile.yangkeduo.com",
+        "livingValidationUrl": "https://renzheng.pinduoduo.com/living-validation/living-validation.html",
+        "useH5FaceCert": true,
+        "bannerHeight": "3.75rem",
+        "isUseRawBackBannerUrl": false
+      },
+      "mall": null,
+      "liveInfo": null,
+      "queries": {
+        "goods_id": "558015059353"
+      },
+      "isIOS": false,
+      "isSystemIOS": false,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "webp": true,
+      "oakData": {
+        "activityCollection": {},
+        "ui": {
+          "newPriceSection": {
+            "isNormal": 1,
+            "type": "normal",
+            "price": "2?.??",
+            "priceRich": [
+              {
+                "txt": "2?.??",
+                "font": 28,
+                "type": 1
+              }
+            ],
+            "prefixRich": [
+              {
+                "txt": "券后",
+                "font": 14,
+                "type": 1
+              },
+              {
+                "type": 2,
+                "space": 2
+              },
+              {
+                "txt": "¥",
+                "font": 15,
+                "type": 1
+              }
+            ],
+            "prefixIcon": {
+              "url": "https://commimg.pddpic.com/upload/ddpay/11a3cba0-62fa-4612-bf2c-eae726dc9936.png",
+              "width": 17,
+              "height": 16
+            },
+            "color": "#E02E24",
+            "bgColor": "#FFFFFF",
+            "descColor": "#58595B",
+            "impTracks": [
+              {
+                "extra": {
+                  "type": 0
+                },
+                "pageElSn": "5049756"
+              }
+            ],
+            "isElder": 0,
+            "useNewDescLabelsRule": false
+          },
+          "newBottomSectionDegrade": {
+            "rightButton": {
+              "title": [
+                {
+                  "txt": "发起拼单",
+                  "font": 17,
+                  "type": 1
+                }
+              ],
+              "clickAction": "groupBuy",
+              "textColor": "#FFFFFF",
+              "bgColor": "#E02E24",
+              "textClickColor": "#EDBBB8",
+              "bgClickColor": "#C51E14",
+              "useBackup": 0,
+              "impTracks": [
+                {
+                  "extra": {
+                    "type": 0
+                  },
+                  "pageElSn": "99811"
+                }
+              ],
+              "clickTrack": {
+                "extra": {
+                  "type": 0
+                },
+                "pageElSn": "99811"
+              }
+            }
+          },
+          "titleSection": {}
+        },
+        "goods": {
+          "decoration": [
+            {
+              "floorId": 1,
+              "key": "DecImage",
+              "type": "image",
+              "priority": -1,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/597ac266-6457-4ab6-806a-1c77d11b5191.jpeg.a.jpeg",
+                  "height": 800,
+                  "width": 800
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193874,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 0,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/97c2a7af-832f-4c44-a0b5-6e35356a81da.jpeg.a.jpeg",
+                  "height": 1278,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193875,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 1,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/02ef046c-9bdc-42c9-a378-137667bcf5f9.jpeg.a.jpeg",
+                  "height": 1147,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193876,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 2,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/0535093f-0227-4e5b-8c4c-71a4efc9cce0.jpeg.a.jpeg",
+                  "height": 1317,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193877,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 3,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/cc1686d3-e3b2-4e3e-9857-37d75965236d.jpeg.a.jpeg",
+                  "height": 1222,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193878,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 4,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/9d42dec0-0c4c-4571-9790-ba137cb6b39d.jpeg.a.jpeg",
+                  "height": 1405,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193879,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 5,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/52ab03ba-494a-4ba9-90a5-bb69c3d1de8d.jpeg.a.jpeg",
+                  "height": 1147,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193880,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 6,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/969b8bcc-e347-4541-a8cd-6c89876f9db6.png.a.jpeg",
+                  "height": 765,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193881,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 7,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/80975de3-85d8-4387-8b73-2346b527e122.png.a.jpeg",
+                  "height": 765,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193882,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 8,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/ee3e9789-623b-43b8-9902-fc7e22267eb9.jpeg.a.jpeg",
+                  "height": 775,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193883,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 9,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/ef377bd3-0bb6-4e35-9000-c38e6ea6eec4.jpeg.a.jpeg",
+                  "height": 1402,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193884,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 10,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/82d19536-f278-4380-a569-36965fc678fd.jpeg.a.jpeg",
+                  "height": 1252,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193885,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 11,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/ae9574ae-f8e3-4ba4-b4fe-6cebe71a2723.jpeg.a.jpeg",
+                  "height": 859,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193886,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 12,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/34e94b2f-8158-4972-ada2-5044b0ad2748.jpeg.a.jpeg",
+                  "height": 858,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193887,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 13,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/fc02e241-3422-4d6a-9eac-909afa0ea13b.jpeg.a.jpeg",
+                  "height": 853,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193888,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 14,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/ff0fbfdb-d4c5-4a44-9773-0d7118db2e80.jpeg.a.jpeg",
+                  "height": 858,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193889,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 15,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/b53fb394-87df-47b5-982c-8d8ff90dda03.jpeg.a.jpeg",
+                  "height": 867,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193890,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 16,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/13da35be-70ca-4dc0-ac7c-cef5b3ed7f6a.jpeg.a.jpeg",
+                  "height": 852,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193891,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 17,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/5a5936fd-73d0-4820-8d50-e2703c7faf2f.jpeg.a.jpeg",
+                  "height": 859,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193892,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 18,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/c746f047-b3fe-41b6-b1ef-fb85b1342c2c.jpeg.a.jpeg",
+                  "height": 853,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            },
+            {
+              "floorId": 8281193893,
+              "key": "DecImage",
+              "type": "image",
+              "priority": 19,
+              "contents": [
+                {
+                  "imgUrl": "https://img.pddpic.com/mms-material-img/2023-11-22/1da5a00b-7a5f-4823-9da8-7138fd66266c.jpeg.a.jpeg",
+                  "height": 856,
+                  "width": 790
+                }
+              ],
+              "enableShare": 1
+            }
+          ],
+          "goodsProperty": [
+            {
+              "key": "材质",
+              "values": [
+                "人造革"
+              ],
+              "refPid": 317,
+              "referenceId": 0
+            },
+            {
+              "key": "适用季节",
+              "values": [
+                "不限季节"
+              ],
+              "refPid": 1885,
+              "referenceId": 0
+            },
+            {
+              "key": "使用对象",
+              "values": [
+                "通用"
+              ],
+              "refPid": 1255,
+              "referenceId": 0
+            }
+          ],
+          "goodsPropertyType": 0
+        },
+        "control": {
+          "aiAssistantEnable": false,
+          "enableFoldFavAndMall": false,
+          "ambiguousPrice": 1
+        },
+        "promotion": {
+          "events": {}
+        },
+        "sectionList": [
+          {
+            "sectionId": "price_section"
+          },
+          {
+            "data": {
+              "color": "#FFFFFF",
+              "height": 4
+            },
+            "sectionId": "space_section"
+          },
+          {
+            "sectionId": "title_section"
+          },
+          {
+            "data": {
+              "height": 8
+            },
+            "sectionId": "space_section"
+          },
+          {
+            "sectionId": "goods_property_section"
+          },
+          {
+            "sectionId": "video_section"
+          },
+          {
+            "sectionId": "illustration_section"
+          },
+          {
+            "sectionId": "decoration_section"
+          },
+          {
+            "data": {
+              "elderMode": false,
+              "pulldownTitle": "点击查看商品价格说明",
+              "content": [
+                {
+                  "txt": "单独购买价：",
+                  "color": "#151516"
+                },
+                {
+                  "txt": "是您单独购买商品的价格\n",
+                  "color": "#58595B"
+                },
+                {
+                  "txt": "发起拼单价：",
+                  "color": "#151516"
+                },
+                {
+                  "txt": "是您拼单购买商品的价格\n",
+                  "color": "#58595B"
+                },
+                {
+                  "txt": "划线价：",
+                  "color": "#151516"
+                },
+                {
+                  "txt": "是指商品展示的参考价，是商品的专柜价、吊牌价、零售价、厂商指导价或该商品曾经展示过的销售价等，并非原价；由于地区、时间的差异性和市场行情波动，专柜价、零售价等可能会与您购物时展示的不一致，该价格仅供您参考\n",
+                  "color": "#58595B"
+                },
+                {
+                  "txt": "特别提示：",
+                  "color": "#151516"
+                },
+                {
+                  "txt": "实际的成交价格可能因您使用优惠券等发生变化，最终以订单结算页的价格为准。若商家单独对价格进行说明的，以商家的表述为准。如您发现活动商品售价或促销信息存在异常，建议购买前先联系商家进行咨询",
+                  "color": "#58595B"
+                }
+              ]
+            },
+            "sectionId": "usage_price_desc_section"
+          }
+        ]
+      },
+      "isABRafLoadJS": true,
+      "isABChatActiveDuration": true,
+      "isABRefreshToken": true
+    },
+    "isShowGoodsCouponModal": false,
+    "extra": {
+      "mallActiveTimeText": ""
+    },
+    "isNativePlatform": false,
+    "isLiteNativePlatform": false,
+    "isTinyNativePlatform": false,
+    "categoryCouponInfo": {},
+    "popupModalElement": null,
+    "isIOS": false,
+    "isSystemIOS": false,
+    "isSystemAndroid": false,
+    "isIOSAccurately": false,
+    "isWhiteFont": false,
+    "isTransparentBar": false,
+    "isShowFailingGroupHint": false,
+    "isWeChatMiniProgram": false,
+    "isShowFastGroupBuyTip": false,
+    "skuOcExtend": {},
+    "bannerState": {
+      "currentIndex": 0,
+      "goToPageIndex": 0,
+      "hasShowedSimpleGoods": false,
+      "simpleGoodsList": []
+    },
+    "fakeAppDownloadShow": false,
+    "withBtnScaleAnimation": false,
+    "isInstallApp": false,
+    "appCouponGray": 0,
+    "appDownloadCouponGray": 0,
+    "appCouponBackStyle": 0,
+    "ifHigherMallInfo": false,
+    "ifHasPushState": false,
+    "abTestValues": {},
+    "animationControllers": [],
+    "animationGroupTimer": null,
+    "mallDetailInfo": {},
+    "viewCtx": {},
+    "detailsIsInner": false,
+    "priceAndSaleZhedie": true,
+    "funcAssemblySet": {},
+    "$isSupportWebp": true,
+    "isHarmonyBApp": false,
+    "goodsCommentsInLayerGrey": false,
+    "goodsSkuImageHotGrey": true,
+    "goodsImageQuantityGrey": false,
+    "useFitter": true,
+    "goodsImageQuantityParams": {},
+    "isDDMCMiniProgram": false,
+    "innerPlatform": "Unknown",
+    "isABGoodsStreamRender": true,
+    "isServerRendered": true,
+    "isFinishInitLoading": true,
+    "isPreClientDataFetch": false
+  }
+}

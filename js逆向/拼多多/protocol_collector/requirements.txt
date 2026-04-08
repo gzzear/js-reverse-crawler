@@ -1,0 +1,4 @@
+PyQt6>=6.6
+httpx[http2]>=0.27
+msgpack>=1.0
+# JS 引擎：使用本机 node 子进程（见 signer/sign_worker.js），无需 python 侧 JS 绑定

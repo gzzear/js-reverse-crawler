@@ -1,0 +1,83 @@
+name: Build Windows EXE
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version tag (e.g., v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pyinstaller>=6.0
+        
+    - name: Create PyInstaller spec
+      run: |
+        pyi-makespec --name "拼多多协议采集工具" ^
+          --windowed ^
+          --onefile ^
+          --icon=ui/icon.ico ^
+          --add-data "ui/styles.qss;ui" ^
+          --add-data "signer/templates;pfb_a4_template.bin;signer/templates" ^
+          --hidden-import=PyQt6 ^
+          --hidden-import=httpx ^
+          --hidden-import=httpcore ^
+          --collect-all=PyQt6 ^
+          main.py
+          
+    - name: Build EXE
+      run: |
+        # Modify spec file to handle Qt6 plugins
+        (Get-Content "拼多多协议采集工具.spec") `
+          -replace 'datas=', 'datas=[(r"C:\\hostedtoolcache\\windows\\Python\\3.11.*\\x64\\Lib\\site-packages\\PyQt6\\Qt6\\plugins;PyQt6\\Qt6\\plugins"),] +' `
+          | Set-Content "拼多多协议采集工具.spec"
+        
+        pyinstaller --clean "拼多多协议采集工具.spec"
+        
+    - name: Verify build
+      run: |
+        if (Test-Path "dist\拼多多协议采集工具.exe") {
+          Write-Host "Build successful!"
+          Get-Item "dist\拼多多协议采集工具.exe" | Select-Object Name, Length
+        } else {
+          Write-Error "Build failed - EXE not found"
+          exit 1
+        }
+        
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: pdd-protocol-collector
+        path: dist/拼多多协议采集工具.exe
+        retention-days: 30
+        
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
+      uses: softprops/action-gh-release@v1
+      with:
+        name: 拼多多协议采集工具 ${{ github.event.inputs.version || github.ref_name }}
+        files: dist/拼多多协议采集工具.exe
+        generate_release_notes: true
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

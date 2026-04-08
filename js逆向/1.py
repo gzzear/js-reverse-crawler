@@ -4,37 +4,42 @@ import requests
 headers = {
     "accept": "application/json, text/plain, */*",
     "accept-language": "zh-CN,zh;q=0.9",
-    "content-type": "application/json;charset=UTF-8",
-    "origin": "https://mobile.yangkeduo.com",
-    "referer": "https://mobile.yangkeduo.com/mtab_pdv_sem.html",
-    "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"",
+    "anti-content": "0asAfxn5rjcyj99VAyPjtsZw8t3gySFHti57jNDZt5aG7eSGzZpaSbeGXuam-q5WYcBX0goPGg5s1_HDgYNh9PpEykEthgd2XT0SGXm67JWm0SNaqBqhM8NNKe7cAJvYqaFVil-OB-tRSbSKh-dfDBo0IQsXKLOmZ6tdJBw3rnkSg8kJQiD9YDIkjVputYKXcrKnjmHL3RX3_QGB_5gr_g0QWwl77wlpSyYDa2Ewabac0mDAAioHqi1YrrwL8-1C5_HEBJM1q48V0s4-CwjRBwYLQB77rWV-1yIqcMYFelqEgU_ZUZ9SlcggmckhteJo_2IbCpH2h2b40oCod249pb9wFgUHwOQ5jU5PVUGHC1LaqDPlDUsgIkXCwv6xqo9-GptyjZdssz9WotBbpxH80qFeumIdZyIeVme_UHQ5HPH0RSkfcugkKCLOGao9syrzbjWqYW3rVKz3ujMwvmvBkGnueXiPb8Dd4lxGZY0M2Q0KNkZJqq9WRGWy3iMRjqcGdfr7nVYKLVBIuFl_KO_-b36uOTRm4eOvff6K-Rza4NMKBjOhx7dK8dDc8d31D3Yzq36KqXDDZtW7eEJKQ9q",
+    "priority": "u=1, i",
+    "referer": "https://mobile.yangkeduo.com/goods.html?goods_id=878497893729&uin=LV3EGMI4DW25A5FXQW5UDQARXI_GEXDA",
+    "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"",
     "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-ch-ua-platform": "\"macOS\"",
     "sec-fetch-dest": "empty",
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "same-origin",
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
-    "verifyauthtoken": "LTQntO5xB69g-Y1ZE-UBjQ5aec3cac4e2ca0871",
-    "who": "an_nuo_tai_shan_0"
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
 }
 cookies = {
-    "api_uid": "CiqaUmmJeMyp8ACCCWnBAg==",
-    "_nano_fp": "Xpm8X0Eanq9qn0TanT_N~15xr72cAFtl6nC8Snvg",
+    "_nano_fp": "XpmjnqUjnpgxX5dYn9_e5QkzUpO98vBzCxkajXMf",
     "webp": "1",
-    "njrpl": "YYaS6Weu5hYaZQi2fXPgaQwwycbQpZrP",
-    "jrpl": "YYaS6Weu5hYaZQi2fXPgaQwwycbQpZrP",
-    "dilx": "~VurHaF88~SZhQKTtEKbT",
-    "PDDAccessToken": "3KXAVAOCBKMGCCFO3NTYXXCKQKNFUCYZAV7YPHLG4ZKOCWO7TTDQ1210872",
-    "pdd_user_id": "6846627679496",
-    "pdd_user_uin": "DK6BSI7322Q44MKA7XEPGM3MPY_GEXDA",
-    "pdd_vds": "gaAdjbMlFEjIzEAIpIkIKsJdpOqdpxKySyMtFlKGpxAwWmMwMEpGjtqtHIKx"
+    "dilx": "ggCtro0JLBtAzWoHuKyli",
+    "jrpl": "aQnl0EgoCRoc9Tap2wW7qGPqRxrVgSQN",
+    "njrpl": "aQnl0EgoCRoc9Tap2wW7qGPqRxrVgSQN",
+    "api_uid": "CiwDtWlhAcGjGACfDAZhAg==",
+    "PDDAccessToken": "F2ZEMLYIZIBNWIZ25TTJOPX7C3ACWRDYOJHEUZM3CCR4HKZHLOJA120d1bf",
+    "pdd_user_id": "7638744964305",
+    "pdd_user_uin": "LV3EGMI4DW25A5FXQW5UDQARXI_GEXDA",
+    "rec_list_personal": "rec_list_personal_3ic9au",
+    "pdd_vds": "gaZZvDBYhvTDrhYfvcTCTrCrYufYDrrBeelZhdDYeDfxvhxCBThuDxDBhxfD"
 }
-url = "https://mobile.yangkeduo.com/proxy/api/api/jade/lizard/new_tarot/ds"
+url = "https://mobile.yangkeduo.com/proxy/api/api/caterham/query/goods_detail_with_tags"
 params = {
-    "pdduid": "6846627679496"
+    "pdduid": "7638744964305",
+    "page_sn": "10014",
+    "list_id": "goods_detail_3oams8",
+    "app_name": "goods_detail",
+    "page": "1",
+    "goods_id": "878497893729",
+    "show_tags": "4",
+    "anti_content": "0asWfxidDhlyy99uPr5F2451pSF4cyfN6oi94GaR7GlaJsN3fabnfkulQDB7IAUD23lVvfTPnsTy54-1kv9-6a4f_dnAygldkX1eU_ktdeYvtlKKxnjvyOPtweQzwDZgBEwdav3SgkpfzDBBGgxx1XsFx4doCVHCp51I3GBN_H6kYPT6oKb_Qjqp62inBxY3CvqXg7LO1puzp3IWSP6FXatv3aWuijOruShKtWoRUVWloE318VBkUz1iJoxRl7RYcoU3Vn2byw2gpdVteKO4l9fHqV9IGaK9-s_SnJJ8iLDGjXZIB9jorveuogze-S99KkUpro2BlEgG3fSu4OSddEC0GH71Y8k3JaWRXKeHwussV8UO9Xf4y_sgz7LcnlNr-IQLTqMgzjBbx_Cyde_EZ_xo4TqJ9JKCU9n_o5oOUoj4UpG3bWswDYxaB_dkJbgHctczATyu7zRnpe1XQlLyJmJ_pdofM8oNlE6HUYOoqInuU6aSBHMEVjChSlyoMxilQSo4xAotHtKt1tFqeGPVCji9Lboq02GiGg3XJvUWIBApo_b7oimRjHr-QqRiRUDNY5aGGhI5BX6q9aDFsVngIPBLw6mT1kfYD26mMqUgXgHe0FlOdF9Kzd_5N9CjgAIsy7i9efPOahznLpaA"
 }
-data = '{\n    "goods_id":"817297054609",\n    "keyword":"{search_key}",\n    "cmm_ds_id":"g001",\n    "nt_request_id":"7ff3a016d01b4940badc00a147336223",\n    "sn":"nt_54b74b17",\n    "anti_content":"0asAfxiF0ioyy9Ex1lP4kFD9aX_cY_FgoVQDnN3c2sxS0TvuWLChF1d4vF7RRxmbUQe51Jk04ZPVDg59aXH6a0gqOY4qXV6b2hdcswZTRUqQ5NiYUtHv_hv8FnidjjFzDxLtKIXY8-PV2f6aefblwumYF_zbDFpA8cSweZaqs5bDQObzwMpnIXs_AOHC-nJb_xf8u3sJ7i1sU7IphqglPR8bBk9oWdjacrIDa3xTklLdJS3WWl8OrSJRRrw9qTJeTZDB-tCHO9SXFP_-ssGkk1tmrG3j1-uuILhmgSG1sHaP7isax4GMZ42x1wB6HiECegnegMTiOgzT6dWss0u9yEmV8wt3OmygYds4TKg5AX5A8Ci2Zsug59Cr1Go97lwmFegzvdsLWH94Wex_MNSMNEOeo1XLhXKk_zwelQPuFkoekjPduXj0HXTwIeRgI80urWnZp3GpOhee1R6GkAoEMnRbW5RlFz6mlMm28lO7prLHU8T2Y_LyW3R2RHIjCq4Itz8bXWrfFJatzQQqD4XumXyYzSdnEf8RiluGidQxOLDYjNQ91xEe8zQhwQDqZS1iYZeSY6rwpGlhdo78XiXtxU3CLLvyGpyAmLN9wMDv5B8REUtYRIozhyQq3lbq8dMNcbU",\n    "tarot_sn":"nt_54b74b17",\n    "nt_session_uid":"ba20f6735b3f444e9e2a9eee5b09fc34_1770617360638",\n    "nt_source_scene":"add_sem_req",\n    "nt_activity_type":"sem_inner_lp",\n    "nt_activity_id":55006,\n    "nt_activity_sub_type":"main",\n    "nt_tid":"167d214f503e496b8d1eefd7b84c13ae",\n    "page_sn":"123853",\n    "nt_trace_id":"sem_e0af17e72af34824bfc23f4f0865c562",\n    "nt_trace_step":"0",\n    "ads_channel":"baidu_seo",\n    "nt_token":"19979d342595470f2_1770617360595",\n    "screen_width":2560,\n    "screen_height":1440,\n    "network":4,\n    "nt_trace_page_type":"ACTIVITY_SUB_UID",\n    "nt_trace_page_value":"sem_inner_lp_55006_main"\n  }'.encode('unicode_escape')
-response = requests.post(url, headers=headers, cookies=cookies, params=params, data=data)
+response = requests.get(url, headers=headers, cookies=cookies, params=params)
 
 print(response.text)
 print(response)
