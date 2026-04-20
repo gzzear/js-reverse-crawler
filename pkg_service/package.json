@@ -1,0 +1,12 @@
+{
+  "name": "pkg-service-workers",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Node workers for pkg_service: anti-content variants for PDD mdkd.",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "jsdom": "^29.0.2"
+  }
+}
