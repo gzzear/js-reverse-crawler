@@ -20,6 +20,7 @@ state 文件 /tmp/mdkd_sms_state_{mobile}.json 在 step_send 时写、step_login
 from __future__ import annotations
 
 import logging
+from typing import Optional
 
 from fastapi import APIRouter, Depends, Header, HTTPException
 from pydantic import BaseModel, Field
@@ -35,7 +36,7 @@ log = logging.getLogger("pkg_service.admin")
 router = APIRouter(prefix="/v1/admin", tags=["admin"])
 
 
-def _require_admin_token(x_admin_token: str | None = Header(default=None)) -> None:
+def _require_admin_token(x_admin_token: Optional[str] = Header(default=None)) -> None:
     if not settings.admin_token:
         # 未配置就完全关闭管理端，防生产未设 token 时路由可用
         raise HTTPException(status_code=503, detail="admin routes disabled (ADMIN_TOKEN unset)")
@@ -58,7 +59,7 @@ class LoginSmsRequest(BaseModel):
     mobile: str = Field(..., pattern=r"^1\d{10}$")
     code: str = Field(..., pattern=r"^\d{4,8}$")
     # 新账号首次登录必填；已存在的 mobile 沿用 DB 记录的 station_code
-    station_code: str | None = Field(None, max_length=32)
+    station_code: Optional[str] = Field(None, max_length=32)
 
 
 class LoginSmsResponse(BaseModel):
@@ -94,7 +95,7 @@ def login_sms(req: LoginSmsRequest) -> LoginSmsResponse:
         - station_code 必填，否则返 400
     """
     # 先看 DB 里这个 mobile 是否已存在，决定 station_code 来源
-    existing_station: str | None = None
+    existing_station: Optional[str] = None
     with SessionLocal() as s:
         row = s.execute(
             select(MdkdAccount).where(MdkdAccount.mobile == req.mobile)
