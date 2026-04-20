@@ -24,7 +24,7 @@ from pathlib import Path
 import requests
 
 from ..node_worker import registry
-from . import mdkd_login
+from . import mdkd_http, mdkd_login
 
 log = logging.getLogger("pkg_service.mdkd_sms_flow")
 
@@ -33,7 +33,11 @@ def _state_path(mobile: str) -> Path:
     return Path(f"/tmp/mdkd_sms_state_{mobile}.json")
 
 
-def _make_session_from_state(device_dict: dict, cookies: dict) -> tuple[mdkd_login._Device, requests.Session]:
+def _make_session_from_state(
+    device_dict: dict,
+    cookies: dict,
+    proxy_url: str | None = None,
+) -> tuple[mdkd_login._Device, requests.Session]:
     dev = mdkd_login._Device(
         pdd_id=device_dict["pdd_id"],
         terminal=device_dict["terminal_finger"],
@@ -41,7 +45,14 @@ def _make_session_from_state(device_dict: dict, cookies: dict) -> tuple[mdkd_log
         a42=device_dict["a42"],
         api_uid=device_dict["api_uid"],
     )
-    s = requests.Session()
+    # proxy_url 显式传入时，强制用 state 里 send 阶段那个 IP（不走 mdkd_http cache）
+    # 这样即使 send/login 跨进程或跨 TTL，login_sms 仍能用同一 IP 出站
+    # —— 否则 IP 换了就会被 PDD 判定为 "验证码对应的会话不存在" → 4000003
+    if proxy_url:
+        s = requests.Session()
+        s.proxies.update({"http": proxy_url, "https": proxy_url})
+    else:
+        s = mdkd_http.new_session()
     for name, val in cookies.items():
         s.cookies.set(name, val, domain=".pinduoduo.com")
     return dev, s
@@ -50,9 +61,7 @@ def _make_session_from_state(device_dict: dict, cookies: dict) -> tuple[mdkd_log
 def step_send(mobile: str, type_: int = 132) -> dict:
     """发短信 + 落盘 state。"""
     dev = mdkd_login._build_device()
-    session = requests.Session()
-    for k, v in mdkd_login._base_cookies(dev).items():
-        session.cookies.set(k, v, domain=".pinduoduo.com")
+    session = mdkd_login._new_session(dev)
 
     data = mdkd_login._send_verify_code_once(session, dev, mobile, type_)
     if not data.get("success") and type_ == 132:
@@ -72,6 +81,8 @@ def step_send(mobile: str, type_: int = 132) -> dict:
             "api_uid": dev.api_uid,
         },
         "cookies": {c.name: c.value for c in session.cookies},
+        # 快照当前出站 IP —— step_login 必须用同一 IP 提交码，否则 4000003
+        "proxy_url": mdkd_http.current_url(),
         "sent_at": time.time(),
         "upstream": data,
     }
@@ -89,7 +100,9 @@ def step_login(mobile: str, code: str) -> dict:
     age = time.time() - state["sent_at"]
     if age > 600:
         raise mdkd_login.MdkdLoginError(f"state too old ({age:.0f}s > 600s), run step_send again")
-    dev, session = _make_session_from_state(state["device"], state["cookies"])
+    dev, session = _make_session_from_state(
+        state["device"], state["cookies"], state.get("proxy_url"),
+    )
 
     anti = mdkd_login._gen_anti_content()
     headers = mdkd_login._base_headers(dev)

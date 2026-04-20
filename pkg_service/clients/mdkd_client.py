@@ -21,6 +21,7 @@ import requests
 from ..metrics import anti_content_gen_total
 from ..node_worker import registry
 from ..node_worker.base import NodeWorkerError
+from ..services import mdkd_http
 
 BASE = "https://mdkd-api.pinduoduo.com"
 ORIGIN = "https://mdkd.pinduoduo.com"
@@ -65,7 +66,7 @@ class MdkdClient:
         self.sub_pass_id = sub_pass_id
         self.device = device
         self.timeout = timeout
-        self._session = requests.Session()
+        self._session = mdkd_http.new_session()
         self._set_cookies(sub_pass_id, device, cookies or {})
 
     def _set_cookies(self, sub_pass_id: str, device: dict, extra_cookies: dict) -> None:

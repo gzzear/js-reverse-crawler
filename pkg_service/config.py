@@ -50,6 +50,18 @@ class Settings:
     # 为空时所有 /v1/admin/* 路由 503，避免无意间暴露（保护生产）
     admin_token: str
 
+    # 调 mdkd-api.pinduoduo.com 的出站代理（家宽/住宅静态 IP 过 PDD 风控用）
+    # 两种二选一模式：
+    # 模式 A（静态）：mdkd_proxy 填完整 URL → http://user:pass@ip:port
+    # 模式 B（动态）：mdkd_proxy 留空，mdkd_proxy_fetch_url 填快代理 API
+    #   → 启动时调 API 拉 IP，拼 mdkd_proxy_user/pass 鉴权；
+    #     IP 缓存 mdkd_proxy_ttl_sec 秒自动刷新
+    mdkd_proxy: str
+    mdkd_proxy_fetch_url: str
+    mdkd_proxy_user: str
+    mdkd_proxy_pass: str
+    mdkd_proxy_ttl_sec: int
+
     # 业务参数
     poll_interval_sec: int   # 稳态增量轮询周期（默认 600s = 10min）
     on_demand_cooldown_sec: int  # 触发式拉取 cooldown（默认 30s）
@@ -70,6 +82,11 @@ class Settings:
             wx_secret=os.getenv("WX_SECRET", ""),
             wx_template_new_pkg=os.getenv("WX_TEMPLATE_NEW_PKG", ""),
             admin_token=os.getenv("ADMIN_TOKEN", ""),
+            mdkd_proxy=os.getenv("MDKD_PROXY", ""),
+            mdkd_proxy_fetch_url=os.getenv("MDKD_PROXY_FETCH_URL", ""),
+            mdkd_proxy_user=os.getenv("MDKD_PROXY_USER", ""),
+            mdkd_proxy_pass=os.getenv("MDKD_PROXY_PASS", ""),
+            mdkd_proxy_ttl_sec=int(os.getenv("MDKD_PROXY_TTL_SEC", "600")),
             poll_interval_sec=int(os.getenv("POLL_INTERVAL_SEC", "600")),
             on_demand_cooldown_sec=int(os.getenv("ON_DEMAND_COOLDOWN_SEC", "30")),
             session_refresh_interval_sec=int(os.getenv("SESSION_REFRESH_INTERVAL_SEC", "10200")),

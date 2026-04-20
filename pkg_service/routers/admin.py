@@ -29,7 +29,7 @@ from sqlalchemy import select
 from ..config import settings
 from ..db.models import MdkdAccount
 from ..db.session import SessionLocal
-from ..services import mdkd_login, mdkd_sms_flow, session_mgr
+from ..services import mdkd_http, mdkd_login, mdkd_sms_flow, session_mgr
 
 log = logging.getLogger("pkg_service.admin")
 
@@ -142,3 +142,56 @@ def login_sms(req: LoginSmsRequest) -> LoginSmsResponse:
 def list_accounts() -> dict:
     mgr = session_mgr.get_manager()
     return {"accounts": mgr.list_accounts()}
+
+
+# ==== 代理出口 IP 诊断 ====
+
+@router.get("/proxy_check", dependencies=[Depends(_require_admin_token)])
+def proxy_check() -> dict:
+    """对比直连 vs MDKD_PROXY 各自出口 IP，验证代理是否真生效。
+
+    返回：
+        {
+          "mdkd_proxy_configured": true,
+          "direct":  {"ip": "x.x.x.x", ...} | {"error": "..."},
+          "via_proxy": {"ip": "x.x.x.x", ...} | {"error": "..."}
+        }
+
+    - direct 查询不带代理（看 ECS 本机出口 IP）
+    - via_proxy 查询走 settings.mdkd_proxy（看代理落地 IP）
+    - 两个 IP 不同且 via_proxy 是国内家宽段 → 代理 OK
+    - 两个 IP 相同 → 代理没生效 / 失败回退直连（多半是 proxies dict 漏配）
+
+    用第三方 https://ipinfo.io/json（免 key，返 ip/city/region/country/org），
+    失败时降级到 https://api.ipify.org?format=json（更稳但只有 ip）。
+    """
+    import requests
+
+    def probe(session: requests.Session) -> dict:
+        try:
+            r = session.get("https://ipinfo.io/json", timeout=8)
+            if r.status_code == 200:
+                d = r.json()
+                return {
+                    "ip": d.get("ip"),
+                    "city": d.get("city"),
+                    "region": d.get("region"),
+                    "country": d.get("country"),
+                    "org": d.get("org"),
+                }
+        except Exception as e:
+            # ipinfo 失败降级
+            try:
+                r = session.get("https://api.ipify.org", params={"format": "json"}, timeout=8)
+                return {"ip": r.json().get("ip"), "note": f"ipinfo failed ({e}); fallback ipify"}
+            except Exception as e2:
+                return {"error": f"both probes failed: ipinfo={e}; ipify={e2}"}
+        return {"error": f"ipinfo status={r.status_code}"}
+
+    direct_sess = requests.Session()
+    proxy_sess = mdkd_http.new_session()
+    return {
+        "mdkd_proxy_configured": bool(settings.mdkd_proxy),
+        "direct": probe(direct_sess),
+        "via_proxy": probe(proxy_sess),
+    }

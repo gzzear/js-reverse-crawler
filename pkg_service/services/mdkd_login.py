@@ -30,6 +30,7 @@ from cryptography.hazmat.primitives.serialization import load_der_public_key
 
 from ..node_worker import registry
 from ..node_worker.base import NodeWorkerError
+from . import mdkd_http
 
 BASE = "https://mdkd-api.pinduoduo.com"
 ORIGIN = "https://mdkd.pinduoduo.com"
@@ -137,6 +138,14 @@ def _base_cookies(dev: _Device) -> dict:
     }
 
 
+def _new_session(dev: _Device) -> requests.Session:
+    """建 Session：打 device cookies + 应用 MDKD_PROXY（如已配置）。"""
+    s = mdkd_http.new_session()
+    for k, v in _base_cookies(dev).items():
+        s.cookies.set(k, v, domain=".pinduoduo.com")
+    return s
+
+
 def _get_public_key(session: requests.Session, dev: _Device) -> str:
     r = session.get(
         BASE + "/sixers/api/user/getPasswordPublicKey",
@@ -196,9 +205,7 @@ def send_sms(mobile: str, type_: int = 132) -> dict:
     返回 {"success": True, "session_id": "...", "expires_in": 600, "upstream": {...}}
     """
     dev = _build_device()
-    session = requests.Session()
-    for k, v in _base_cookies(dev).items():
-        session.cookies.set(k, v, domain=".pinduoduo.com")
+    session = _new_session(dev)
 
     data = _send_verify_code_once(session, dev, mobile, type_)
     if not data.get("success") and type_ == 132:
@@ -280,9 +287,7 @@ def login_by_sms(mobile: str, code: str, session_id: str) -> dict:
 def login(mobile: str, password: str) -> dict:
     """密码登录。返回 {"user_id", "token", "sub_pass_id", "device", "cookies", "raw"}"""
     dev = _build_device()
-    session = requests.Session()
-    for k, v in _base_cookies(dev).items():
-        session.cookies.set(k, v, domain=".pinduoduo.com")
+    session = _new_session(dev)
 
     pub = _get_public_key(session, dev)
     enc_pwd = _encrypt_password(pub, password)
@@ -334,9 +339,7 @@ def login(mobile: str, password: str) -> dict:
 def encrypt_password(password: str) -> str:
     """在线取 PDD 公钥 + RSA-PKCS1v1.5 加密 + base64url。"""
     dev = _build_device()
-    session = requests.Session()
-    for k, v in _base_cookies(dev).items():
-        session.cookies.set(k, v, domain=".pinduoduo.com")
+    session = _new_session(dev)
     pub = _get_public_key(session, dev)
     return _encrypt_password(pub, password)
 
