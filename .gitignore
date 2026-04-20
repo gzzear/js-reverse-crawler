@@ -3,3 +3,12 @@
 1.js
 vcs.xml
 1.py
+
+# pkg_service: secrets & runtime artifacts
+pkg_service/.env
+pkg_service/.env.local
+pkg_service/node_modules/
+pkg_service/**/__pycache__/
+pkg_service/pkg_service_dev.sqlite3
+research/mdkd_ttl/state_arm_*.json
+/tmp/mdkd_ttl/

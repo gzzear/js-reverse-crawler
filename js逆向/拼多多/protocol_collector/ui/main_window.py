@@ -16,7 +16,7 @@ from core.collector import CollectorConfig, CollectorController
 from core.cookie_pool import CookiePool
 from core.pdd_client import DEFAULT_UA
 from core.proxy_manager import parse_proxy, verify_proxy
-from core.url_parser import extract_goods_ids
+from core.url_parser import extract_goods_ids, extract_url_entries
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "data" / "goods"
@@ -448,7 +448,7 @@ class MainWindow(QMainWindow):
 
     # ------------------------------------------------------------------ run
     def _start(self) -> None:
-        urls = extract_goods_ids(self.url_edit.toPlainText())
+        urls = extract_url_entries(self.url_edit.toPlainText())
         if not urls:
             QMessageBox.warning(self, "错误", "请先添加至少一个有效的商品链接或 goods_id")
             return

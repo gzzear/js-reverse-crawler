@@ -108,6 +108,7 @@ class PddClient:
         goods_id: str,
         cookie: CookieEntry,
         anti_content: str | None = None,  # accepted for backwards compat, unused
+        original_url: str | None = None,
     ) -> dict:
         headers = {
             "user-agent": self.ua,
@@ -122,12 +123,19 @@ class PddClient:
             "sec-fetch-user": "?1",
             "upgrade-insecure-requests": "1",
         }
-        r = self._http.get(
-            GOODS_URL,
-            params={"goods_id": goods_id},
-            headers=headers,
-            cookies=cookie.parsed,
-        )
+        if original_url:
+            r = self._http.get(
+                original_url,
+                headers=headers,
+                cookies=cookie.parsed,
+            )
+        else:
+            r = self._http.get(
+                GOODS_URL,
+                params={"goods_id": goods_id},
+                headers=headers,
+                cookies=cookie.parsed,
+            )
 
         # Login redirect → cookie is dead
         if r.status_code in (301, 302, 303, 307, 308):

@@ -18,7 +18,7 @@ from core.result_writer import ResultWriter
 
 @dataclass
 class CollectorConfig:
-    urls: list[str]                     # goods_id list
+    urls: list                          # list[tuple[str, str|None]] (goods_id, original_url)
     ua: str = DEFAULT_UA
     interval_sec: float = 1.0
     threads: int = 3
@@ -41,7 +41,11 @@ class CollectorWorker(QObject):
         self._cfg = config
         self._pool = cookie_pool
         self._pool.set_death_threshold(config.death_threshold)
-        self._queue: deque[str] = deque(config.urls)
+        # queue holds (gid, original_url) tuples
+        self._queue: deque = deque(
+            (u if isinstance(u, tuple) else (u, None)) for u in config.urls
+        )
+        self._url_map: dict[str, str | None] = {gid: url for gid, url in self._queue}
         self._queue_lock = threading.Lock()
         self._stop = threading.Event()
         self._done = 0
@@ -89,15 +93,15 @@ class CollectorWorker(QObject):
         self._stop.set()
 
     # --- queue ---
-    def _pop(self) -> Optional[str]:
+    def _pop(self) -> Optional[tuple]:
         with self._queue_lock:
             if not self._queue:
                 return None
             return self._queue.popleft()
 
-    def _push_front(self, gid: str) -> None:
+    def _push_front(self, item: tuple) -> None:
         with self._queue_lock:
-            self._queue.appendleft(gid)
+            self._queue.appendleft(item)
 
     # --- per-worker cookie rotation ---
     def _next_cookie(self, current: Optional[CookieEntry]) -> Optional[CookieEntry]:
@@ -124,13 +128,14 @@ class CollectorWorker(QObject):
     def _run_one_inner(self, thread_idx: int) -> None:
         current: Optional[CookieEntry] = None
         while not self._stop.is_set():
-            gid = self._pop()
-            if gid is None:
+            item = self._pop()
+            if item is None:
                 return
+            gid, original_url = item
             cookie = self._next_cookie(current if not (current and current.dead) else None)
             current = cookie
             if cookie is None:
-                self._push_front(gid)
+                self._push_front(item)
                 with self._queue_lock:
                     remaining = len(self._queue)
                 self.log.emit("ERR", f"[T{thread_idx}] 没有可用 cookie，队列剩余 {remaining}，终止该线程")
@@ -145,11 +150,11 @@ class CollectorWorker(QObject):
                     self.progress.emit(done, self._total)
                     self.gid_consumed.emit(gid)
                 else:
-                    self._push_front(gid)
+                    self._push_front(item)
 
             try:
                 data = self._client.fetch_goods_detail(
-                    goods_id=gid, cookie=cookie,
+                    goods_id=gid, cookie=cookie, original_url=original_url,
                 )
             except GoodsUnavailable as e:
                 # 商品级软封控（售罄/下架）— 不计 cookie 失败、不重试
@@ -229,7 +234,8 @@ class CollectorWorker(QObject):
             with self._queue_lock:
                 leftover = list(self._queue)
                 self._queue.clear()
-            for gid in leftover:
+            for item in leftover:
+                gid = item[0] if isinstance(item, tuple) else item
                 self._record_failure(gid)
             if self._stop.is_set():
                 self.log.emit("INFO", "采集已停止")
