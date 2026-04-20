@@ -18,6 +18,7 @@ from prometheus_client import CONTENT_TYPE_LATEST, generate_latest
 from .config import settings
 from .db.session import init_schema
 from .node_worker import registry
+from .routers import admin as admin_router
 from .routers import bind as bind_router
 from .routers import debug as debug_router
 from .routers import image as image_router
@@ -74,6 +75,7 @@ app.include_router(pkg_query_router.router)
 app.include_router(bind_router.router)
 app.include_router(image_router.router)
 app.include_router(push_router.router)
+app.include_router(admin_router.router)
 
 
 @app.get("/metrics", include_in_schema=False)

@@ -46,6 +46,10 @@ class Settings:
     wx_secret: str
     wx_template_new_pkg: str  # "新包裹到件"订阅消息模板 id
 
+    # 管理端 admin 路由（站长登录/运维）
+    # 为空时所有 /v1/admin/* 路由 503，避免无意间暴露（保护生产）
+    admin_token: str
+
     # 业务参数
     poll_interval_sec: int   # 稳态增量轮询周期（默认 600s = 10min）
     on_demand_cooldown_sec: int  # 触发式拉取 cooldown（默认 30s）
@@ -65,6 +69,7 @@ class Settings:
             wx_appid=os.getenv("WX_APPID", ""),
             wx_secret=os.getenv("WX_SECRET", ""),
             wx_template_new_pkg=os.getenv("WX_TEMPLATE_NEW_PKG", ""),
+            admin_token=os.getenv("ADMIN_TOKEN", ""),
             poll_interval_sec=int(os.getenv("POLL_INTERVAL_SEC", "600")),
             on_demand_cooldown_sec=int(os.getenv("ON_DEMAND_COOLDOWN_SEC", "30")),
             session_refresh_interval_sec=int(os.getenv("SESSION_REFRESH_INTERVAL_SEC", "10200")),
